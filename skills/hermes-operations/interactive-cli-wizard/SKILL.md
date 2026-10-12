@@ -1,6 +1,6 @@
 ---
 name: interactive-cli-wizard
-description: Use when a CLI setup wizard waits for menu input you must provide. Covers PTY launch, arrow-key menus, polling between steps and checking the result.
+description: Use when a CLI wizard waits for menu input. You must provide that input yourself. Covers PTY launch, arrow-key menus, polling between steps and checking the result.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

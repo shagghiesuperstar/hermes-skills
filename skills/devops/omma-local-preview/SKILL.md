@@ -1,6 +1,6 @@
 ---
 name: omma-local-preview
-description: Use when running or porting an exported design bundle (a zip of front-end source with a preview host) locally, or moving its scene into a storefront. Covers serving over HTTP, reconciling asset paths, porting to Next.js, and layering 3D content under page text.
+description: Use when running or porting an exported design bundle. A bundle is a zip of front-end source with a preview host. It may run locally or move its scene into a storefront. Covers serving over HTTP, reconciling asset paths, porting to Next.js, and layering 3D content under page text.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

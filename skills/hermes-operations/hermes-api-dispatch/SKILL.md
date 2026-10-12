@@ -1,6 +1,6 @@
 ---
 name: hermes-api-dispatch
-description: Use when dispatching or steering an async agent run over the Hermes local API. Covers POST, polling, steering, stopping and wedge triage.
+description: Use when dispatching or steering an agent run. The run is dispatched over the Hermes local API. Covers POST, polling, steering, stopping and wedge triage.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

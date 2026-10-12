@@ -1,6 +1,6 @@
 ---
 name: say-do-verify
-description: Use when telling the operator that something will happen, is done, is live, or was created. Run the check in the same turn, quote its output, and correct any earlier claim the check does not support.
+description: Use when telling the operator something is done or live. It applies to anything that will happen, is done, is live, or was created. Run the check in the same turn, quote its output, and correct any earlier claim the check does not support.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: free-sota-moa
-description: Use when setting up a mixture-of-agents preset that draws on free-tier model providers through a local OpenAI-compatible router. Covers install, live model discovery, and preset setup.
+description: Use when setting up a free-tier mixture-of-agents preset. Draws on free-tier model providers through a local OpenAI-compatible router. Covers install, live model discovery, and preset setup.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

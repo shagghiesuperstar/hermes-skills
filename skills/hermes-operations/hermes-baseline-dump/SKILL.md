@@ -1,6 +1,6 @@
 ---
 name: hermes-baseline-dump
-description: Use when you need a read-only snapshot of Hermes profile config for an audit. Covers the fields to capture, what empty fallbacks mean and how to cross-check auth.
+description: Use when auditing a Hermes profile config snapshot. The snapshot is read-only. Covers the fields to capture, what empty fallbacks mean and how to cross-check auth.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

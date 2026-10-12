@@ -1,6 +1,6 @@
 ---
 name: research-use-storefront
-description: Use when building a research-use-only B2C storefront that sells laboratory materials under a fixed copy contract, with a quote desk, a bench for reserving items and lot paper for each product. Covers copy rules, visual proof and the dark-not-delete rule for compliance changes.
+description: Use when building a research-use-only storefront. Covers copy rules, visual proof and the dark-not-delete rule for compliance changes.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

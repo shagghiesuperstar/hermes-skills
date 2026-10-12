@@ -1,6 +1,6 @@
 ---
 name: ds4-local-coding-workbench
-description: Use when pairing a local DeepSeek engine with two coding agents on one Mac. Covers worktree isolation, role split, approval gates, and config for each client.
+description: Use when two coding agents share a local DeepSeek engine. The engine runs on one Mac. Covers worktree isolation, role split, approval gates, and config for each client.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

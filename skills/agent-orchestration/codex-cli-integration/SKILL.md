@@ -1,6 +1,6 @@
 ---
 name: codex-cli-integration
-description: Use when driving the OpenAI Codex CLI on a local repo task. Covers exec flags, sandbox modes, timeouts, and checking changes that landed.
+description: Use when driving the OpenAI Codex CLI on a local repo. Covers exec flags, sandbox modes, timeouts, and checking changes that landed.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

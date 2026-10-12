@@ -1,6 +1,6 @@
 ---
 name: spotlight-control
-description: Use when memory or disk pressure on a Mac comes from Spotlight indexing or from two model servers sharing one memory pool. Covers indexing toggles, single-server rules, and diagnosis.
+description: Use when Spotlight or model servers strain memory. The memory or disk pressure can come from Spotlight indexing or from two model servers sharing one memory pool. Covers indexing toggles, single-server rules, and diagnosis.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

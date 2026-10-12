@@ -1,6 +1,6 @@
 ---
 name: pr-evidence-verification
-description: Use when verifying a pull request's head files (hashes, sizes, existence, branch state) without a clone, or running a repository's acceptance script against a PR head read-only.
+description: Use when verifying a pull request's head files. Checks hashes, sizes, existence and branch state without a clone, or runs a repository's acceptance script against a PR head read-only.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

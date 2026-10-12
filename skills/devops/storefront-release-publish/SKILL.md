@@ -1,6 +1,6 @@
 ---
 name: storefront-release-publish
-description: Use when publishing a Medusa storefront and backend release to a hosted cloud environment. Pins the approved commit, proves the live build, and runs layered checks before calling the release live.
+description: Use when publishing a Medusa storefront or backend. Pins the approved commit, proves the live build, and runs layered checks before calling the release live.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

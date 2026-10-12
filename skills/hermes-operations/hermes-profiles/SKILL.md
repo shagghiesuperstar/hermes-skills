@@ -1,6 +1,6 @@
 ---
 name: hermes-profiles
-description: Use when creating a Hermes profile or copying its skills and MCP servers. Covers fresh creation, selective skill copies, per-profile wiring and kanban pins.
+description: Use when creating a Hermes profile. It also applies when copying its skills and MCP servers. Covers fresh creation, selective skill copies, per-profile wiring and kanban pins.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

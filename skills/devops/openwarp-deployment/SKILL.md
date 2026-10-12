@@ -1,6 +1,6 @@
 ---
 name: openwarp-deployment
-description: Use when installing and auditing an open-source terminal fork (OpenWarp) that connects to a local model server on a Mac. Covers identifying the right binary in the bundle, configuring a local provider, auditing outbound connections, building from a pinned commit, and MCP configuration.
+description: Use when installing or auditing the OpenWarp fork. It is an open-source terminal fork that installs and connects to a local model server on a Mac. Covers identifying the right binary in the bundle, configuring a local provider, auditing outbound connections, building from a pinned commit, and MCP configuration.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: hermes-slack-direct-api
-description: Use when an agent must send or read Slack messages through the Web API directly. Covers token handling, mention IDs, thread replies and the limits of bot-to-bot wakeups.
+description: Use when an agent sends or reads Slack messages directly. The route is the Slack Web API. Covers token handling, mention IDs, thread replies and the limits of bot-to-bot wakeups.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

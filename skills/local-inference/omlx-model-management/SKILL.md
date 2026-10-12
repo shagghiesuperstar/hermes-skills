@@ -1,6 +1,6 @@
 ---
 name: omlx-model-management
-description: Use when adding, converting, registering, or recovering models on an oMLX server. Covers download, conversion, admin-API registration, sleep and wake recovery, and cache placement.
+description: Use when adding, converting, or recovering oMLX models. Registration runs on an oMLX server. Covers download, conversion, admin-API registration, sleep and wake recovery, and cache placement.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

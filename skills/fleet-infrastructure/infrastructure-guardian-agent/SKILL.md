@@ -1,6 +1,6 @@
 ---
 name: infrastructure-guardian-agent
-description: Use when a scheduled agent should watch critical services on two or more Macs, report config drift, and flag upstream releases without changing operator-owned config.
+description: Use when a scheduled agent watches Mac services. It watches critical services on two or more Macs, reports config drift, and flags upstream releases without changing operator-owned config.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

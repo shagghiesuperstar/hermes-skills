@@ -1,6 +1,6 @@
 ---
 name: hermes-config-toolset-changes
-description: Use when adding or removing toolsets or MCP servers in a Hermes profile config. Covers live-config checks, CLI limits, list-valued keys and operator-approved edits.
+description: Use when changing Hermes toolsets or MCP servers. The change is made in a profile config. Covers live-config checks, CLI limits, list-valued keys and operator-approved edits.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

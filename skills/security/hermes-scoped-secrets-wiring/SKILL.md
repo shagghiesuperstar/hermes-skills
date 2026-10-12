@@ -1,6 +1,6 @@
 ---
 name: hermes-scoped-secrets-wiring
-description: Use when one API key must reach only some Hermes profiles through the secrets command helper instead of bulk Bitwarden injection. Covers the helper script, per-profile config, override safety, and fingerprint checks against the store.
+description: Use when a key must reach only some Hermes profiles. It must reach them through the secrets command helper, not bulk Bitwarden injection. Covers the helper script, per-profile config, override safety, and fingerprint checks against the store.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

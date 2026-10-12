@@ -1,6 +1,6 @@
 ---
 name: product-description-generator
-description: Use when writing or improving product listing copy from specs, competitor pages or manufacturer and distributor sources, including batches of wholesale descriptions from a CSV. Every claim is cited, a two-pass voice audit runs, and facts that cannot be sourced become open questions.
+description: Use when writing product descriptions from sources. Every claim is cited, a two-pass voice audit runs, and facts that cannot be sourced become open questions.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

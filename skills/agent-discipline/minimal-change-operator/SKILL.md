@@ -1,6 +1,6 @@
 ---
 name: minimal-change-operator
-description: Use when planning, reviewing or proposing a code or configuration change. Choose the smallest verified, reversible change, label every claim by evidence, and stop at each external side effect for explicit approval.
+description: Use when planning or reviewing a code or config change. It also covers proposing such a change. Choose the smallest verified, reversible change, label every claim by evidence, and stop at each external side effect for explicit approval.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

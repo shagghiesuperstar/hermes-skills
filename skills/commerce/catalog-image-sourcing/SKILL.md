@@ -1,6 +1,6 @@
 ---
 name: catalog-image-sourcing
-description: Use when a catalog row has a missing, placeholder or wrong product image or description and you must find a real pack shot or manufacturer copy that provably matches that exact SKU. Covers search, live URL checks, vision verification and an honest residual list.
+description: Use when a catalog product image is missing or wrong. Covers search, live URL checks, vision verification and an honest residual list.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

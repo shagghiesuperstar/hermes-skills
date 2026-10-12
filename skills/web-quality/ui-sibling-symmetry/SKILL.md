@@ -1,6 +1,6 @@
 ---
 name: ui-sibling-symmetry
-description: Use when a storefront page gains or changes a filter, selector, navigation item, list or control. Match the sibling controls on the same page.
+description: Use when a storefront page adds or changes a control. Match the sibling controls on the same page.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

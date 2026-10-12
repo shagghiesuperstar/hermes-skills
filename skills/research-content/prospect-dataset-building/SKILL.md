@@ -1,6 +1,6 @@
 ---
 name: prospect-dataset-building
-description: Use when building a deduplicated, verified list of business prospects from public registries and map data, delivered as a CSV with a source link on every row.
+description: Use when building a verified list of business prospects. It is deduplicated, drawn from public registries and map data, and delivered as a CSV with a source link on every row.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

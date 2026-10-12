@@ -1,6 +1,6 @@
 ---
 name: tinyfish-cli
-description: Use when connecting TinyFish search or fetch to installed coding agents. Covers key handling, unattended connection, the doctor check and a search-and-fetch proof.
+description: Use when connecting TinyFish search to coding agents. It applies to search and fetch. Covers key handling, unattended connection, the doctor check and a search-and-fetch proof.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

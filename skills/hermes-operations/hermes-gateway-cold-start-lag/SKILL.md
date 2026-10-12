@@ -1,6 +1,6 @@
 ---
 name: hermes-gateway-cold-start-lag
-description: Use when the first model call after a Hermes gateway restart takes about 30 seconds. Covers the cold-path cause, how to measure it and when a fix is worth it.
+description: Use when a Hermes gateway's first model call is slow. It takes about 30 seconds after a restart. Covers the cold-path cause, how to measure it and when a fix is worth it.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

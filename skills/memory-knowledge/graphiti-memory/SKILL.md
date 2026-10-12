@@ -1,6 +1,6 @@
 ---
 name: graphiti-memory
-description: Use when diagnosing or fixing Graphiti MCP timeouts, CancelledError hangs, Neo4j connection-pool pressure, MCP keepalive drops, or a Graphiti write that fails with missing credentials. Covers the tuning ladder and the event-loop and embedder traps.
+description: Use when diagnosing Graphiti timeouts or pool pressure. It also applies to hangs, keepalive drops and writes that fail with missing credentials. Covers the tuning ladder and the event-loop and embedder traps.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

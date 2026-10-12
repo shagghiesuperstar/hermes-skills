@@ -1,6 +1,6 @@
 ---
 name: kanban-worker-spawn-failures
-description: Use when a kanban worker crashes or gives up within about two minutes of starting. Matches the failure to a cause before any repair runs.
+description: Use when a kanban worker crashes or gives up early. Covers failures within about two minutes of starting. Matches the failure to a cause before any repair runs.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

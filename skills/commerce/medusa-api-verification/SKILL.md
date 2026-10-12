@@ -1,6 +1,6 @@
 ---
 name: medusa-api-verification
-description: Use when verifying a Medusa backend, storefront or product data over HTTP without admin keys or test passwords. Covers token classes, read-only probes, publishable-key discovery, product counts and deploy-SHA gates.
+description: Use when verifying a Medusa backend over HTTP. Covers token classes, read-only probes, publishable-key discovery, product counts and deploy-SHA gates, without admin keys or test passwords.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

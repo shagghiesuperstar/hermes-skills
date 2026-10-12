@@ -1,6 +1,6 @@
 ---
 name: mcp-stdio-health-probe
-description: Use when probing a stdio MCP server that has no client set up. Covers the handshake, the tool list, evidence records and the silent-server case.
+description: Use when probing a stdio MCP server with no client. The server has no client set up yet. Covers the handshake, the tool list, evidence records and the silent-server case.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

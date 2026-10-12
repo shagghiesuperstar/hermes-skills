@@ -1,6 +1,6 @@
 ---
 name: hermes-spec-first
-description: Use when creating a kanban task that will spawn coding, architecture, or analysis work. Writes a spec file first, then runs readiness and course-correct gates.
+description: Use when a kanban task spawns coding or analysis work. Covers architecture work too. Writes a spec file first, then runs readiness and course-correct gates.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

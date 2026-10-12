@@ -1,6 +1,6 @@
 ---
 name: hindsight-coding-agent-cloud-setup
-description: Use when installing the Hindsight coding-agents package in cloud mode on a host, so every supported coding harness writes to one designated memory bank. Captures a baseline, pins routing keys, backs up harness configs, and verifies that no extra bank or mental model appeared.
+description: Use when installing cloud-mode Hindsight coding agents. The goal is that every supported harness writes to one designated memory bank. Captures a baseline, pins routing keys, backs up harness configs, and verifies that no extra bank or mental model appeared.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

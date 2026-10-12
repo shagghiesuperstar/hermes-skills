@@ -1,6 +1,6 @@
 ---
 name: buzz-self-hosting
-description: Use when setting up or debugging a self-hosted Buzz relay with Docker Compose. Covers the hostname rules, membership roster, domain changes, layered agent debugging and backups.
+description: Use when setting up a self-hosted Buzz relay. It also covers debugging with Docker Compose. Covers the hostname rules, membership roster, domain changes, layered agent debugging and backups.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

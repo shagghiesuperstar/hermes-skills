@@ -1,6 +1,6 @@
 ---
 name: cloudflare-worker-app
-description: Use when building a Cloudflare Worker app with KV storage and a cron snapshot, gated behind Cloudflare Access for public-internet users. Covers server-side secrets, disabling preview hosts, JWT verification, free-plan limits, fail-visible data, and verification.
+description: Use when building a Cloudflare Worker with KV storage. It has a cron snapshot and sits behind Cloudflare Access for public-internet users. Covers server-side secrets, disabling preview hosts, JWT verification, free-plan limits, fail-visible data, and verification.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

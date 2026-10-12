@@ -1,6 +1,6 @@
 ---
 name: chat-safe-secret-staging
-description: Use when a secret must reach a local env file without passing through chat. Covers operator-entered staging, file permissions, gitignore-first, fingerprint-only verification, and clipboard hygiene.
+description: Use when a secret must reach an env file, not chat. Covers operator-entered staging, file permissions, gitignore-first, fingerprint-only verification, and clipboard hygiene.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: medusa-agentic-development
-description: Use when orchestrating or implementing Medusa.js commerce work with coding agents. Covers harness roles, official docs and agent plugins, a B2C-first monorepo boot, vendored compliance-module wiring and bank-gated payment sequencing.
+description: Use when orchestrating Medusa.js work with coding agents. Covers harness roles, official docs and agent plugins, a B2C-first monorepo boot, vendored compliance-module wiring and bank-gated payment sequencing.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

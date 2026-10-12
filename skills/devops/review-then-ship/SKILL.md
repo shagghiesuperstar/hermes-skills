@@ -1,6 +1,6 @@
 ---
 name: review-then-ship
-description: Use when preparing a pull request or commit that touches production or upstream code. Pause after the first working draft, verify the external symbols, trim the scope, then ship.
+description: Use when preparing a commit or PR for production code. Pause after the first working draft, verify the external symbols, trim the scope, then ship.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

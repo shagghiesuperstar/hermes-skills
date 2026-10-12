@@ -1,6 +1,6 @@
 ---
 name: exo-model-scout
-description: Use when picking MLX models for each memory tier of an EXO cluster. Covers discovery, size bands, same-band benchmarking, champion promotion, and report evidence rules.
+description: Use when picking MLX models per EXO memory tier. Covers discovery, size bands, same-band benchmarking, champion promotion, and report evidence rules for an EXO cluster.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

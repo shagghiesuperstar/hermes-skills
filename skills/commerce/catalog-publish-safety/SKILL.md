@@ -1,6 +1,6 @@
 ---
 name: catalog-publish-safety
-description: Use when preflighting catalog writes, price changes, media replacement or new catalog items. Proves identity, sibling coverage, sell-unit pricing and compliance gates before any write, then requires a read-back check.
+description: Use when preflighting catalog writes or price changes. Proves identity, sibling coverage, sell-unit pricing and compliance gates before any write, then requires a read-back check.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: mcp-client-setup
-description: Use when connecting an MCP server to a Hermes profile as a client. Covers pre-flight probes, the config block, the session boundary and smoke tests.
+description: Use when connecting an MCP server to a Hermes profile. The profile uses the server as a client. Covers pre-flight probes, the config block, the session boundary and smoke tests.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

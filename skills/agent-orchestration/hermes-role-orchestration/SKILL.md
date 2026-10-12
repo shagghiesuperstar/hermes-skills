@@ -1,6 +1,6 @@
 ---
 name: hermes-role-orchestration
-description: Use when designing or maintaining role routing, runnable agent profiles, identity documents, and provider fallback chains for a multi-agent Hermes fleet.
+description: Use when designing or maintaining role routing. Covers runnable agent profiles, identity documents, and provider fallback chains for a multi-agent Hermes fleet.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

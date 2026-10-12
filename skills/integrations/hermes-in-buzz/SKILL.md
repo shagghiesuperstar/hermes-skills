@@ -1,6 +1,6 @@
 ---
 name: hermes-in-buzz
-description: Use when connecting a Hermes gateway on one machine to a Buzz relay used from another machine. Covers the identity rules, admission checks, the outbound CLI, verification and media attachments.
+description: Use when a Hermes gateway reaches a remote Buzz relay. The gateway runs on one machine and the relay is used from another. Covers the identity rules, admission checks, the outbound CLI, verification and media attachments.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

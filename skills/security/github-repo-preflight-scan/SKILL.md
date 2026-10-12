@@ -1,6 +1,6 @@
 ---
 name: github-repo-preflight-scan
-description: Use when a GitHub repo, skill, or MCP server must be checked before it is installed or run. Covers quarantine, classification, scanner order, conservative findings, and hard stop conditions.
+description: Use when a GitHub repo or skill needs a preflight scan. An MCP server must be checked the same way before it is installed or run. Covers quarantine, classification, scanner order, conservative findings, and hard stop conditions.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: xai-grok-oauth
-description: Use when Hermes must use xAI Grok through a subscription login instead of an API key. Covers the browser login, model selection, fallback order and login troubleshooting.
+description: Use when Hermes must use xAI Grok by subscription login. It is used instead of an API key. Covers the browser login, model selection, fallback order and login troubleshooting.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

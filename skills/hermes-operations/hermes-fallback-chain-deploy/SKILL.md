@@ -1,6 +1,6 @@
 ---
 name: hermes-fallback-chain-deploy
-description: Use when rolling out or auditing Hermes fallback chains across profiles. Covers the chain rules, credential gaps, verified writes, watching for silent fallbacks and rollback.
+description: Use when rolling out or auditing Hermes fallback chains. The chains span several profiles. Covers the chain rules, credential gaps, verified writes, watching for silent fallbacks and rollback.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

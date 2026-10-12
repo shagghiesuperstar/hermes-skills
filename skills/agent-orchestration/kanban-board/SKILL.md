@@ -1,6 +1,6 @@
 ---
 name: kanban-board
-description: Use when managing tasks on a Hermes kanban board, such as creating, dispatching, linking, checking status, or diagnosing a run that keeps cycling.
+description: Use when managing tasks on a kanban board. Covers creating, dispatching, linking, checking status, and diagnosing a Hermes kanban run that keeps cycling.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

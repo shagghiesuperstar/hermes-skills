@@ -1,6 +1,6 @@
 ---
 name: multi-mac-fleet-ops
-description: Use when working across several Macs that share one fleet. Covers host identity, live reachability probes, safe cross-host commands, service restarts, and fleet-wide config changes.
+description: Use when working across several Macs in one fleet. Covers host identity, live reachability probes, safe cross-host commands, service restarts, and fleet-wide config changes.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

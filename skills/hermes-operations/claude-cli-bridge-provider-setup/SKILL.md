@@ -1,6 +1,6 @@
 ---
 name: claude-cli-bridge-provider-setup
-description: Use when wiring a local Claude CLI bridge into Hermes as a provider. Covers bridge install, custom provider registration, launchd keepalive, and OAuth re-login.
+description: Use when wiring a Claude CLI bridge into Hermes. The bridge is wired in as a provider. Covers bridge install, custom provider registration, launchd keepalive, and OAuth re-login.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

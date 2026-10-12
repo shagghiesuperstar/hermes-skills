@@ -1,6 +1,6 @@
 ---
 name: hermes-webui-remote-access
-description: Use when a Hermes web UI must be reachable from a phone over a private network. Covers a private-address bind, the daemon start, a debug ladder and separate SSH checks.
+description: Use when a Hermes web UI must be reachable from a phone. The route runs over a private network. Covers a private-address bind, the daemon start, a debug ladder and separate SSH checks.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: kanban-card-lifecycle
-description: Use when creating, blocking, unblocking, or splitting a kanban task card, or when a task appears stalled, duplicated, or orphaned on the board.
+description: Use when creating, blocking, or unblocking a kanban card. Covers splitting a card, and tasks that look stalled, duplicated, or orphaned on the board.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

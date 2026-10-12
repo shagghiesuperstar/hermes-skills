@@ -1,6 +1,6 @@
 ---
 name: claude-agent-teams-orchestration
-description: Use when Claude Code should lead a parallel Agent Teams swarm on a multi-module task. Sets the spawn contract, file ownership, and proof fields.
+description: Use when Claude Code leads an Agent Teams swarm. Covers a parallel swarm on a multi-module task. Sets the spawn contract, file ownership, and proof fields.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

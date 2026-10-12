@@ -1,6 +1,6 @@
 ---
 name: ds4-system-health
-description: Use when operating the DS4 DeepSeek inference server on macOS. Covers launchd setup, health checks, safe restarts, model switches, and multi-Mac engine updates.
+description: Use when operating the DS4 inference server on macOS. It serves DeepSeek models. Covers launchd setup, health checks, safe restarts, model switches, and multi-Mac engine updates.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

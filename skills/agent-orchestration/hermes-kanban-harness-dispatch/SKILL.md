@@ -1,6 +1,6 @@
 ---
 name: hermes-kanban-harness-dispatch
-description: Use when an orchestrator dispatches a kanban board to coding harnesses such as Claude Code, Codex, and Grok Build. It covers lane routing, worktree isolation, the independent judge gate, and the card completion contract.
+description: Use when dispatching a kanban board to coding harnesses. An orchestrator runs this for harnesses such as Claude Code, Codex, and Grok Build. It covers lane routing, worktree isolation, the independent judge gate, and the card completion contract.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

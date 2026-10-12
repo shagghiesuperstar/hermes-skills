@@ -1,6 +1,6 @@
 ---
 name: regulatory-coa-verification
-description: Use when finding, verifying or binding certificates of analysis (COAs) and lab-test reports for regulated products such as supplements, cosmetics, food or hemp-derived goods. Covers source discovery, identity checks against the document text, status codes, wall hosts and a metadata bind with read-back proof.
+description: Use when verifying certificates of analysis (COAs). Covers source discovery, identity checks against the document text, status codes, wall hosts and a metadata bind with read-back proof.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

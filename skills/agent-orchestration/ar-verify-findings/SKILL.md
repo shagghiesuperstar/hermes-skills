@@ -1,6 +1,6 @@
 ---
 name: ar-verify-findings
-description: Use when an adversarial review returns REQUEST_CHANGES and findings must be verified before any rework. Confirms or dismisses each finding first.
+description: Use when an adversarial review returns REQUEST_CHANGES. Findings must be verified before any rework. Confirms or dismisses each finding first.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

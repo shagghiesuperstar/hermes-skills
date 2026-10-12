@@ -1,6 +1,6 @@
 ---
 name: page-speed-baseline
-description: Use when measuring a live storefront's page speed with Lighthouse and shipping the baseline as a docs-only draft PR.
+description: Use when measuring a live storefront's page speed. Uses Lighthouse and ships the baseline as a docs-only draft PR.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

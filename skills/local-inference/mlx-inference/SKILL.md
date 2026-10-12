@@ -1,6 +1,6 @@
 ---
 name: mlx-inference
-description: Use when running or tuning local MLX inference servers on a Mac. Covers safe config edits, restarts, per-model settings, side-by-side variants, and single-GPU sharing.
+description: Use when running or tuning local MLX inference servers. They run on a Mac. Covers safe config edits, restarts, per-model settings, side-by-side variants, and single-GPU sharing.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

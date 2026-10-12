@@ -1,6 +1,6 @@
 ---
 name: regulated-catalog-content
-description: Use when drafting buyer-facing content for a regulated online store (hemp-derived products, alcohol, prescription-adjacent, gambling, supplements or firearms) from its live catalog and a few fetched pages. Output is one draft pull request, never merged, with a compliance lint that must report zero hits.
+description: Use when drafting copy for a regulated online store. Output is one draft pull request, never merged, with a compliance lint that must report zero hits.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

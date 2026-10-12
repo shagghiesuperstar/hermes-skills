@@ -1,6 +1,6 @@
 ---
 name: openrouter-mcp
-description: Use when live model benchmarks, pricing, provider latency or credit balance are needed from the OpenRouter MCP server. Covers tools, billing, routing suffixes, tokens and a REST fallback.
+description: Use when you need live model benchmarks or pricing. The data also covers provider latency and credit balance, from the OpenRouter MCP server. Covers tools, billing, routing suffixes, tokens and a REST fallback.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: merge-reconciler
-description: Use when two agents' branches conflict in a git merge or rebase and neither agent should decide the outcome alone. A neutral third party reconciles the conflict.
+description: Use when two agents' branches conflict in a git merge. It also covers a rebase, where neither agent should decide the outcome alone. A neutral third party reconciles the conflict.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

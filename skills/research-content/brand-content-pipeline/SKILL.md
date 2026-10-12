@@ -1,6 +1,6 @@
 ---
 name: brand-content-pipeline
-description: Use when generating brand video or image content with AI for a regulated or character-led brand whose logo and characters must stay fixed.
+description: Use when generating AI brand video or image content. Covers regulated or character-led brands whose logo and characters must stay fixed.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

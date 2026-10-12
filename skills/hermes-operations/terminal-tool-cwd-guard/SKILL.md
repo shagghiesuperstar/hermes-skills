@@ -1,6 +1,6 @@
 ---
 name: terminal-tool-cwd-guard
-description: Use when terminal commands fail after a directory was removed, or before any change to a repo you may not be in. Covers stale working directories, retry loops and preflight checks.
+description: Use when terminal commands fail on a removed directory. It also applies before any change to a repo you may not be in. Covers stale working directories, retry loops and preflight checks.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

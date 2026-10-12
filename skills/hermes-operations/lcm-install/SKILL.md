@@ -1,6 +1,6 @@
 ---
 name: lcm-install
-description: Use when installing or repairing a lossless context-engine plugin for Hermes. Covers the three activation steps, registration checks and compaction tuning.
+description: Use when installing or repairing a Hermes context plugin. It is a lossless context-engine plugin. Covers the three activation steps, registration checks and compaction tuning.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

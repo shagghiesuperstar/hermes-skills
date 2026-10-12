@@ -1,6 +1,6 @@
 ---
 name: vendor-identity-verification
-description: Use when naming a vendor, brand, sender, corporate parent or product family in a reply, a task record, a pull request or a message. Verify the corporate relationship with one cheap probe first, and do not call a sender suspicious from a pattern match alone.
+description: Use when naming a vendor, brand or sender in a reply. It also covers a corporate parent, a product family, a task record, a pull request or a message. Verify the corporate relationship with one cheap probe first, and do not call a sender suspicious from a pattern match alone.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

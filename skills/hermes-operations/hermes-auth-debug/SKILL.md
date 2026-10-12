@@ -1,6 +1,6 @@
 ---
 name: hermes-auth-debug
-description: Use when a Hermes provider login or API key fails or looks expired. Covers the runtime credential check, credential pool cleanup and env-versus-pool confusion.
+description: Use when a Hermes provider login or key fails. The login or key may look expired. Covers the runtime credential check, credential pool cleanup and env-versus-pool confusion.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

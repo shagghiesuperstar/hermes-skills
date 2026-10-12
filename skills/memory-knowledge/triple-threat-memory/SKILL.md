@@ -1,6 +1,6 @@
 ---
 name: triple-threat-memory
-description: Use when a Hermes install runs three long-term memory stores bridged together, a primary fact store, a local semantic index and a temporal graph. Route each read and write to the right store, keep the stores consistent with an idempotent bridge, and report partial writes honestly.
+description: Use when Hermes runs three bridged memory stores. They are a primary fact store, a local semantic index and a temporal graph. Route each read and write to the right store, keep the stores consistent with an idempotent bridge, and report partial writes honestly.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

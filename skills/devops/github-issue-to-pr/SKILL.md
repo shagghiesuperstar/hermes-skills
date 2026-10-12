@@ -1,6 +1,6 @@
 ---
 name: github-issue-to-pr
-description: Use when carrying a GitHub issue to a verified pull request with honest CI reporting. Covers reading the full thread, sweeping for duplicate work, validating the premise against design intent, fixing the bug class, proving the regression test, and reporting CI from live evidence.
+description: Use when carrying a GitHub issue to a verified PR. It reports CI honestly. Covers reading the full thread, sweeping for duplicate work, validating the premise against design intent, fixing the bug class, proving the regression test, and reporting CI from live evidence.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: opus-5-5-claude-code
-description: Use when handing a long coding run, a design or copy task, or a pre-review pass to Claude Code or Claude apps running an Opus model. Covers the task brief, effort, stop rules, and checking results.
+description: Use when handing a long run to an Opus model. Applies to a long coding run, a design or copy task, or a pre-review pass in Claude Code or Claude apps. Covers the task brief, effort, stop rules, and checking results.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

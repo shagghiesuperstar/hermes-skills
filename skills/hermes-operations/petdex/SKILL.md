@@ -1,6 +1,6 @@
 ---
 name: petdex
-description: Use when a Hermes user wants an animated terminal or desktop mascot. Covers browsing, installing, selecting, sizing and diagnosing pets.
+description: Use when a Hermes user wants an animated mascot. It can run in the terminal or on the desktop. Covers browsing, installing, selecting, sizing and diagnosing pets.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

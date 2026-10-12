@@ -1,6 +1,6 @@
 ---
 name: docs-pr-batch-landing
-description: Use when several open, reviewed, docs-only pull requests should land together as one draft pull request. Covers snapshotting live state, skip rules, per-PR commits copied from each source head, gates before push, and a verification block for the description.
+description: Use when reviewed docs PRs should land as one draft. Several open, reviewed, docs-only pull requests are combined into one draft pull request. Covers snapshotting live state, skip rules, per-PR commits copied from each source head, gates before push, and a verification block for the description.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

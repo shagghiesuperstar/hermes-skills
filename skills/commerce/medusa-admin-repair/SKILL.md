@@ -1,6 +1,6 @@
 ---
 name: medusa-admin-repair
-description: Use when a Medusa Cloud admin page crashes on orphaned link rows, a direct database repair is needed, or an external inventory or order system must sync into Medusa. Covers diagnosis, a fail-closed SQL repair with backups and tested sync patterns.
+description: Use when a Medusa admin page crashes on orphaned rows. Covers diagnosis, a fail-closed SQL repair with backups and tested sync patterns.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

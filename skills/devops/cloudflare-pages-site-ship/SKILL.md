@@ -1,6 +1,6 @@
 ---
 name: cloudflare-pages-site-ship
-description: Use when deploying a static site to Cloudflare Pages headlessly. Covers a token-safe deploy script, a content-verification gate that an HTTP 200 alone does not satisfy, custom-domain order, cache busting, and rollback from a backup.
+description: Use when deploying a static site to Cloudflare Pages. The deploy runs headlessly. Covers a token-safe deploy script, a content-verification gate that an HTTP 200 alone does not satisfy, custom-domain order, cache busting, and rollback from a backup.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: catalog-data-audit
-description: Use when auditing an existing storefront catalog for naming, SKU, category, price, media and feed drift without changing live data. Produces a per-row CSV of defects and a named-rule report.
+description: Use when auditing a storefront catalog for drift. Produces a per-row CSV of defects and a named-rule report, without changing live data.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

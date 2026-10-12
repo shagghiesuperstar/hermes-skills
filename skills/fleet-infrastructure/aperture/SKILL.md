@@ -1,6 +1,6 @@
 ---
 name: aperture
-description: Use when attaching an agent to a Tailscale Aperture gateway. Covers MCP connector setup, least-privilege grants, and tailnet-only inference routing.
+description: Use when attaching an agent to Tailscale Aperture. Aperture is a gateway. Covers MCP connector setup, least-privilege grants, and tailnet-only inference routing.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

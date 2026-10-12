@@ -1,6 +1,6 @@
 ---
 name: deterministic-discovery-doctrine
-description: Use when answering questions about configuration, keys, vendors, UI, how-to steps or architecture. Load an authoritative source before answering or acting, because a guessed answer on these topics is a hard failure.
+description: Use when answering config or vendor questions. The same applies to keys, UI, how-to steps or architecture. Load an authoritative source before answering or acting, because a guessed answer on these topics is a hard failure.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

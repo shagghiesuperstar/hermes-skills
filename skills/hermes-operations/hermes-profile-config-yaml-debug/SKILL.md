@@ -1,6 +1,6 @@
 ---
 name: hermes-profile-config-yaml-debug
-description: Use when a Hermes profile's config.yaml fails to parse, or a model change lands in the wrong profile. Covers scope checks, YAML repair, schema checks and restart verification.
+description: Use when a profile's config.yaml will not parse. It also applies when a model change lands in the wrong profile. Covers scope checks, YAML repair, schema checks and restart verification.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

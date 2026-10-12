@@ -1,6 +1,6 @@
 ---
 name: eidolon-deployment
-description: Use when installing, configuring, verifying or maintaining the Eidolon self-improvement layer on a Hermes Agent, covering the SOUL.md identity file, the dream-cycle handler, the integrity watchdog, scheduled reports, and the operator-policy rules that govern its changes.
+description: Use when deploying the Eidolon layer on Hermes. Its scope covers the SOUL.md identity file, the dream-cycle handler, the integrity watchdog, scheduled reports, and the operator-policy rules that govern its changes.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

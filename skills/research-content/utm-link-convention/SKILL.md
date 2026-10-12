@@ -1,6 +1,6 @@
 ---
 name: utm-link-convention
-description: Use when publishing, drafting or scheduling any outbound storefront link. Checks UTM parameters against the team's naming convention and blocks links that fail.
+description: Use when publishing any outbound storefront link. Checks UTM parameters against the team's naming convention and blocks links that fail.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

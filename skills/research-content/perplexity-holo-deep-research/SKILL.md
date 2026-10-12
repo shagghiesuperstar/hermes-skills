@@ -1,6 +1,6 @@
 ---
 name: perplexity-holo-deep-research
-description: Use when running deep-research turns in the Perplexity desktop app through a local vision-based desktop agent (HoloDesktop CLI) instead of the web.
+description: Use when running deep research in Perplexity desktop. It runs through a local vision-based desktop agent (HoloDesktop CLI) instead of the web.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

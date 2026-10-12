@@ -1,6 +1,6 @@
 ---
 name: mactop-system-monitor
-description: Use when reading live CPU, GPU, memory, and thermal metrics from an Apple Silicon Mac. Covers the interactive view, one-shot JSON for telemetry, and export.
+description: Use when reading live Apple Silicon metrics. Covers CPU, GPU, memory and thermal data, the interactive view, one-shot JSON for telemetry, and export.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

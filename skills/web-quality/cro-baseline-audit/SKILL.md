@@ -1,6 +1,6 @@
 ---
 name: cro-baseline-audit
-description: Use when auditing one storefront's conversion and UX on mobile and desktop. Read-only, ranked backlog with evidence per row.
+description: Use when auditing a storefront's conversion and UX. Read-only, ranked backlog with evidence per row.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

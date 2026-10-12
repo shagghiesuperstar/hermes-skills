@@ -1,6 +1,6 @@
 ---
 name: cron-watchdog-agents
-description: Use when authoring or debugging a cron job that runs CI, repo watches or other automation. Covers toolsets, silent failures, honest reporting and escalation.
+description: Use when authoring or debugging a cron job. The job runs CI, repo watches or other automation. Covers toolsets, silent failures, honest reporting and escalation.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

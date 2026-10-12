@@ -1,6 +1,6 @@
 ---
 name: agent-honesty
-description: Use when a capability is unavailable, a claim cannot be verified, or a result looks empty. Report the constraint plainly and immediately, with no optimistic wording.
+description: Use when a capability is missing or a claim is unproven. It also applies when a result looks empty. Report the constraint plainly and immediately, with no optimistic wording.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

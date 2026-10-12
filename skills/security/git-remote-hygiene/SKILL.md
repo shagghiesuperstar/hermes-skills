@@ -1,6 +1,6 @@
 ---
 name: git-remote-hygiene
-description: Use when pushing from a repository or when a remote URL may carry a token. Covers redacted remote checks, credential helpers, explicit push refspecs, and token rotation.
+description: Use when pushing from a repo or checking a remote URL. A remote URL may carry a token. Covers redacted remote checks, credential helpers, explicit push refspecs, and token rotation.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: ai-discoverability-max
-description: Use when a website must be made as readable as possible to search engines, AI answer engines, generative engines and AI agents, without changing what human visitors see. Covers crawlability, structured data, agent files, accessibility for agent browsers, bot access and a verification gate.
+description: Use when making a website readable to search and AI. Covers crawlability, structured data, agent files, accessibility for agent browsers, bot access and a verification gate, without changing what human visitors see.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

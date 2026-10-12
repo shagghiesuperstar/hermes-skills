@@ -1,6 +1,6 @@
 ---
 name: delegated-artifact-spotcheck
-description: Use when an orchestrator must verify that a delegated worker's output is real work and not a stub. Reads files on disk and returns a REAL, STUB, or SUSPECT verdict.
+description: Use when a delegated worker's output must be checked. An orchestrator confirms it is real work, not a stub. Reads files on disk and returns a REAL, STUB, or SUSPECT verdict.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

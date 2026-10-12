@@ -23,6 +23,7 @@ LICENSE = "MIT"
 NAME_RE = re.compile(r"^[a-z][a-z0-9-]*$")
 SEMVER_RE = re.compile(r"^\d+\.\d+\.\d+$")
 DESCRIPTION_START = "Use when"
+TRIGGER_MAX = 60  # the first sentence ("Use when ...") must be a self-contained trigger within ~57 characters
 DESCRIPTION_MAX = 400
 TAG_RANGE = (2, 8)
 BULLET_RANGE = (3, 8)
@@ -147,6 +148,9 @@ def parse_skill(skill_dir, root, category_ids):
             fail(f'description must start with "{DESCRIPTION_START}"')
         if len(description) > DESCRIPTION_MAX:
             fail(f"description is {len(description)} characters, max is {DESCRIPTION_MAX}")
+        trigger = re.split(r"(?<=[.!?])\s", description, maxsplit=1)[0]
+        if len(trigger) > TRIGGER_MAX:
+            fail(f"description's first sentence is {len(trigger)} characters; the trigger must end within {TRIGGER_MAX}")
 
     version = fm.get("version")
     if not isinstance(version, str) or not SEMVER_RE.match(version):

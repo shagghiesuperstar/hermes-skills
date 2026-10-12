@@ -1,6 +1,6 @@
 ---
 name: legacy-infrastructure-cleanup
-description: Use when an infrastructure cutover left stale host, address, or endpoint references behind. Covers live-versus-evidence triage, backups, a re-scan gate, and reporting.
+description: Use when a cutover left stale host and endpoint names. Stale references can include addresses. Covers live-versus-evidence triage, backups, a re-scan gate, and reporting.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: local-inference-server-key-rotation
-description: Use when a local inference server's API key must be rotated after exposure or on a maintenance schedule. Covers finding every consumer by hash, atomic updates, restarting only the server, and proving the new key works while the old one is rejected.
+description: Use when a local inference server's key must be rotated. Rotation follows exposure or a maintenance schedule. Covers finding every consumer by hash, atomic updates, restarting only the server, and proving the new key works while the old one is rejected.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

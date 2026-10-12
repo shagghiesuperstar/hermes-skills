@@ -1,6 +1,6 @@
 ---
 name: official-source-claim-factcheck
-description: Use when checking published claims against official sources, with verbatim quotes a script can re-fetch and a per-claim verdict.
+description: Use when checking claims against official sources. Uses verbatim quotes a script can re-fetch and a per-claim verdict.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: anti-vibecode
-description: Use when building, restyling or auditing a marketing page, homepage, waitlist, pricing page or SaaS landing page, to avoid generic AI-generated design. Scores the page against 30 common tells, and passes it only when no more than five are present.
+description: Use when building or auditing a marketing page. Scores the page against 30 common tells, and passes it only when no more than five are present.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: browser-smoke
-description: Use when a live web application needs a scripted browser smoke test, such as a login, cart or checkout-start flow, or a signed-out read-only browse of a public storefront, and the interactive browser cannot authenticate or capture network evidence. Covers headless runs, request capture, redaction and blockers.
+description: Use when a live app needs a scripted smoke test. The interactive browser cannot authenticate or capture network evidence. Covers headless runs, request capture, redaction and blockers.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

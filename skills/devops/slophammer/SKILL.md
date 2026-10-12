@@ -1,6 +1,6 @@
 ---
 name: slophammer
-description: Use when auditing or fixing a GitHub repository against the Slophammer standard for AI-generated code quality, testing gaps, dependency boundaries, complexity, type safety and coverage gates.
+description: Use when auditing a repo for AI code quality. Covers auditing or fixing a GitHub repository against the Slophammer standard for testing gaps, dependency boundaries, complexity, type safety and coverage gates.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

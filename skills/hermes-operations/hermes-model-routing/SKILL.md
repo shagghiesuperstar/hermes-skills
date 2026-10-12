@@ -1,6 +1,6 @@
 ---
 name: hermes-model-routing
-description: Use when wiring a model provider, fallback chain or auxiliary lane, or sweeping a retired model from every route. Covers slugs, lanes, pools and quota signals.
+description: Use when wiring a model provider or fallback chain. It also applies to auxiliary lanes and to sweeping a retired model from every route. Covers slugs, lanes, pools and quota signals.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

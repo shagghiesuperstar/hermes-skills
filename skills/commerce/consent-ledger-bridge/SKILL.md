@@ -1,6 +1,6 @@
 ---
 name: consent-ledger-bridge
-description: Use when wiring commerce opt-in and opt-out events to an email or contact-list service so that an opt-out always wins, including out-of-order and duplicate events. Covers a durable suppression ledger, event-time ordering and a five-case test matrix.
+description: Use when wiring opt-ins and opt-outs to email services. Covers a durable suppression ledger, event-time ordering and a five-case test matrix, so that an opt-out always wins.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: claude-cli-model-switching
-description: Use when choosing, pinning, or switching the Claude Code CLI model, effort level, or fallback, or exposing extra models through a local bridge.
+description: Use when choosing or switching the Claude Code CLI model. Covers pinning, effort level, fallback, and exposing extra models through a local bridge.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

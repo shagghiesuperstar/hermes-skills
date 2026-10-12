@@ -1,6 +1,6 @@
 ---
 name: cursor-agent-cli
-description: Use when running Cursor's cursor-agent CLI headless for code inspection or edits. Covers login, print-mode flags, sandbox limits, and host-side verification.
+description: Use when running Cursor's cursor-agent CLI headless. Covers code inspection or edits, login, print-mode flags, sandbox limits, and host-side verification.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

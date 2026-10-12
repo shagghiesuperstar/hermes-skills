@@ -1,6 +1,6 @@
 ---
 name: regulated-commerce-compliance-gates
-description: Use when adding or extending state, age or license gates on a regulated online store, or wiring a hosted age-verification provider into checkout. Covers one legal blocklist, fail-closed checks, cache-stable pages, a dark-launch arming sequence and verification by hash.
+description: Use when adding state, age or license gates to a store. Covers one legal blocklist, fail-closed checks, cache-stable pages, a dark-launch arming sequence and verification by hash.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

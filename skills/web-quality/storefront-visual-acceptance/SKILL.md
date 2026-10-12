@@ -1,6 +1,6 @@
 ---
 name: storefront-visual-acceptance
-description: Use when accepting storefront visual changes such as fixed-canvas heroes over CSS backdrops, scroll-driven entrances, product grids and commit-pinned preview evidence.
+description: Use when accepting storefront visual changes. Covers fixed-canvas heroes over CSS backdrops, scroll-driven entrances, product grids and commit-pinned preview evidence.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

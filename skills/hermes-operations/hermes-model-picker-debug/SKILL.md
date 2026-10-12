@@ -1,6 +1,6 @@
 ---
 name: hermes-model-picker-debug
-description: Use when the Hermes model picker shows zero, duplicate or stale models. Covers config-versus-session truth, picker data formats, cache refresh and picker implementation bugs.
+description: Use when the Hermes model picker shows wrong models. It shows zero, duplicate or stale models. Covers config-versus-session truth, picker data formats, cache refresh and picker implementation bugs.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

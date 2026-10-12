@@ -1,6 +1,6 @@
 ---
 name: hermes-config-revert-restore
-description: Use when reverting a Hermes profile's primary model to a backup without losing later changes. Covers snapshot, block-only restore, verification and reporting.
+description: Use when reverting a Hermes profile's model to a backup. Later changes are kept. Covers snapshot, block-only restore, verification and reporting.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

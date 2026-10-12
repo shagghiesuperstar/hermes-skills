@@ -1,6 +1,6 @@
 ---
 name: repo-backup
-description: Use when backing up a git repository or worktree before risky work. Makes tarballs with checksums, runs a secret scan, pushes to a private backup remote and verifies each ref.
+description: Use when backing up a git repository before risky work. Makes tarballs with checksums, runs a secret scan, pushes to a private backup remote and verifies each ref.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

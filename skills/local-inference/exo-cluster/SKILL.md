@@ -1,6 +1,6 @@
 ---
 name: exo-cluster
-description: Use when building a distributed MLX inference cluster across two or more Apple Silicon Macs. Covers install, direct-link networking, storage, model placement, and recovery.
+description: Use when building a distributed MLX inference cluster. It runs across two or more Apple Silicon Macs. Covers install, direct-link networking, storage, model placement, and recovery.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

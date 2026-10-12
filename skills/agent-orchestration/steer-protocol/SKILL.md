@@ -1,6 +1,6 @@
 ---
 name: steer-protocol
-description: Use when several agents share one group chat and each message must name the agent it is for. Covers the addressing prefix, reply routing, and when to stay silent or ask a question.
+description: Use when several agents share one group chat. Each message must name the agent it is for. Covers the addressing prefix, reply routing, and when to stay silent or ask a question.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

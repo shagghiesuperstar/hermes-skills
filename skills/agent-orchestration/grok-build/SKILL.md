@@ -1,6 +1,6 @@
 ---
 name: grok-build
-description: Use when driving the Grok Build CLI on a named git branch with its memory feature on. Covers memory setup, prompt ordering, interrupted runs, and safe commits.
+description: Use when driving the Grok Build CLI on a named branch. Runs with its memory feature on. Covers memory setup, prompt ordering, interrupted runs, and safe commits.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

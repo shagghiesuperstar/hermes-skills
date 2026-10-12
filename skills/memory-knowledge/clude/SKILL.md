@@ -1,6 +1,6 @@
 ---
 name: clude
-description: Use when installing, connecting or troubleshooting the Clude cognitive memory sidecar, its MCP server, or its dream and reflection daemon next to an existing agent memory system. Clude is additive and must not replace the memory systems already in place.
+description: Use when installing or fixing the Clude memory sidecar. It covers its MCP server and dream or reflection daemon, beside an existing memory system. Clude is additive and must not replace the memory systems already in place.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

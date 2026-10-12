@@ -1,6 +1,6 @@
 ---
 name: hermes-skill-sharing
-description: Use when publishing a Hermes skill to a public GitHub repo and a community hub. Covers account checks, credit, install URL proof and the hub submission.
+description: Use when publishing a Hermes skill to GitHub or a hub. Publishing goes to a public GitHub repo and a community hub. Covers account checks, credit, install URL proof and the hub submission.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

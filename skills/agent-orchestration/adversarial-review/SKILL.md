@@ -1,6 +1,6 @@
 ---
 name: adversarial-review
-description: Use when verifying another agent's delivered work before it ships. Runs a read-only reviewer and critic check that ends in one verdict line.
+description: Use when checking another agent's work before it ships. Runs a read-only reviewer and critic check that ends in one verdict line.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

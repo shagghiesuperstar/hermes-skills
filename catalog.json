@@ -90,7 +90,7 @@
         "code-review",
         "read-only-qa"
       ],
-      "description": "Use when verifying another agent's delivered work before it ships. Runs a read-only reviewer and critic check that ends in one verdict line.",
+      "description": "Use when checking another agent's work before it ships. Runs a read-only reviewer and critic check that ends in one verdict line.",
       "features": [
         "A read-only reviewer pass that checks each acceptance criterion against the real artifact at a pinned commit.",
         "A reviewer and critic inner loop with a three-way critic verdict (AGREE, DISAGREE_EVIDENCE, DISAGREE_CONCERN).",
@@ -136,7 +136,7 @@
         "verification",
         "communication"
       ],
-      "description": "Use when a capability is unavailable, a claim cannot be verified, or a result looks empty. Report the constraint plainly and immediately, with no optimistic wording.",
+      "description": "Use when a capability is missing or a claim is unproven. It also applies when a result looks empty. Report the constraint plainly and immediately, with no optimistic wording.",
       "features": [
         "A required response pattern for a blocked capability: name it, state what unblocks it, offer the next step.",
         "Verification of attributed quotes before they are executed.",
@@ -178,7 +178,7 @@
         "search-presence",
         "citations"
       ],
-      "description": "Use when auditing whether a brand is cited in search results and AI answers for real buyer questions. Records who is cited, labels every surface that could not be observed as UNKNOWN, and delivers a matrix, raw observations and a report as a draft pull request.",
+      "description": "Use when auditing whether AI answers cite a brand. Records who is cited, labels every surface that could not be observed as UNKNOWN, and delivers a matrix, raw observations and a report as a draft pull request.",
       "features": [
         "Question phrasing taken from real autocomplete suggestions, saved verbatim, with the seed recorded for each question.",
         "A surface-by-surface probe before the run, which marks each surface as observable or unknown.",
@@ -223,7 +223,7 @@
         "robots",
         "accessibility"
       ],
-      "description": "Use when a website must be made as readable as possible to search engines, AI answer engines, generative engines and AI agents, without changing what human visitors see. Covers crawlability, structured data, agent files, accessibility for agent browsers, bot access and a verification gate.",
+      "description": "Use when making a website readable to search and AI. Covers crawlability, structured data, agent files, accessibility for agent browsers, bot access and a verification gate, without changing what human visitors see.",
       "features": [
         "One data module that every output reads from, so titles, structured data, agent files and feeds cannot drift.",
         "Crawl and sitemap rules, with separate sitemaps and accurate last-modified dates.",
@@ -264,7 +264,7 @@
         "content-gaps",
         "research"
       ],
-      "description": "Use when building a sourced question bank of buyer questions for AI-search and answer-engine coverage, mapped to a site's live pages.",
+      "description": "Use when building a sourced question bank for AI search. Covers buyer questions for answer-engine coverage, mapped to a site's live pages.",
       "features": [
         "Per-site question CSVs with the observed URL and either the answering page or `GAP`.",
         "A gap ranking grouped by topic cluster, with no proposed copy.",
@@ -309,7 +309,7 @@
         "audit",
         "copy"
       ],
-      "description": "Use when building, restyling or auditing a marketing page, homepage, waitlist, pricing page or SaaS landing page, to avoid generic AI-generated design. Scores the page against 30 common tells, and passes it only when no more than five are present.",
+      "description": "Use when building or auditing a marketing page. Scores the page against 30 common tells, and passes it only when no more than five are present.",
       "features": [
         "A scorecard of 30 named tells, scored 0 or 1 with no partial credit.",
         "Replacement guidance for each tell, grouped by visual, proof, copy and chrome.",
@@ -352,7 +352,7 @@
         "tailnet",
         "inference"
       ],
-      "description": "Use when attaching an agent to a Tailscale Aperture gateway. Covers MCP connector setup, least-privilege grants, and tailnet-only inference routing.",
+      "description": "Use when attaching an agent to Tailscale Aperture. Aperture is a gateway. Covers MCP connector setup, least-privilege grants, and tailnet-only inference routing.",
       "features": [
         "MCP attachment that checks the gateway, lists tools, and confirms the expected connector tools appear.",
         "Connector setup for node provisioning and SSH-enabled machine listing, with the admin steps kept separate from the agent steps.",
@@ -395,7 +395,7 @@
         "code-review",
         "triage"
       ],
-      "description": "Use when an adversarial review returns REQUEST_CHANGES and findings must be verified before any rework. Confirms or dismisses each finding first.",
+      "description": "Use when an adversarial review returns REQUEST_CHANGES. Findings must be verified before any rework. Confirms or dismisses each finding first.",
       "features": [
         "A FIND → VERIFY → FIX loop with one tag per finding: CONFIRMED, FALSE_POSITIVE, or UNCLEAR.",
         "A routing table that turns the verifier's counts into one of three next actions.",
@@ -439,7 +439,7 @@
         "clarification",
         "operator-trust"
       ],
-      "description": "Use when an instruction could mean more than one source, target or scope. Find every candidate first, then ask before planning, unless only one candidate exists.",
+      "description": "Use when an instruction could mean several things. It applies when the candidates are several sources, targets or scopes. Find every candidate first, then ask before planning, unless only one candidate exists.",
       "features": [
         "A decision tree from an ambiguous reference to one of three moves: ask, proceed with a stated assumption, or block.",
         "An evidence-first probe sequence for coded references, run before asking or refusing.",
@@ -482,7 +482,7 @@
         "deliverability",
         "automation"
       ],
-      "description": "Use when operating the Bento email platform through its API, MCP server or dashboard. Covers keys and site scoping, which surface to use, safe-send rules and common pitfalls.",
+      "description": "Use when operating the Bento email platform. Work through its API, MCP server or dashboard. Covers keys and site scoping, which surface to use, safe-send rules and common pitfalls.",
       "features": [
         "Account model: teams, sites, people, events, fields, tags, flows, sequences and broadcasts.",
         "Surface chooser: which job belongs to the API, the MCP server, the dashboard or a person.",
@@ -531,7 +531,7 @@
         "credentials",
         "hermes-integration"
       ],
-      "description": "Use when a Hermes host reads or writes credentials through the Bitwarden Secrets Manager CLI. Covers machine accounts, scoped read grants, no-echo handling, upsert and verification, and disk-key consolidation.",
+      "description": "Use when a Hermes host reads or writes Bitwarden secrets. It uses the Bitwarden Secrets Manager CLI for credentials. Covers machine accounts, scoped read grants, no-echo handling, upsert and verification, and disk-key consolidation.",
       "features": [
         "A clear split between the organizational secrets manager and the personal vault, with the rule that automation uses the first.",
         "Machine accounts with one access token each, granted read access to specific secrets.",
@@ -574,7 +574,7 @@
         "agent-fleet",
         "least-privilege"
       ],
-      "description": "Use when creating, arming, tightening, or retiring a bot in a multi-bot Hermes or Grok fleet. Sets outcome, instruction, and approval rules.",
+      "description": "Use when creating, arming, tightening, or retiring a bot. Covers a multi-bot Hermes or Grok fleet. Sets outcome, instruction, and approval rules.",
       "features": [
         "A keep, defer, or reject guide for candidate tools and integrations, with one reason for each.",
         "A three-layer instruction template: BASE rules every bot shares, ROLE for what the bot owns, and CURRENT FOCUS for the week.",
@@ -624,7 +624,7 @@
         "character-lock",
         "regulated-brand"
       ],
-      "description": "Use when generating brand video or image content with AI for a regulated or character-led brand whose logo and characters must stay fixed.",
+      "description": "Use when generating AI brand video or image content. Covers regulated or character-led brands whose logo and characters must stay fixed.",
       "features": [
         "Three production lanes, chosen by the decision being made: interactive direction, unattended API batches, and a local model for private assets.",
         "Character locks: approved transparent reference images that every shot starts from.",
@@ -712,7 +712,7 @@
         "checkout",
         "browser"
       ],
-      "description": "Use when a live web application needs a scripted browser smoke test, such as a login, cart or checkout-start flow, or a signed-out read-only browse of a public storefront, and the interactive browser cannot authenticate or capture network evidence. Covers headless runs, request capture, redaction and blockers.",
+      "description": "Use when a live app needs a scripted smoke test. The interactive browser cannot authenticate or capture network evidence. Covers headless runs, request capture, redaction and blockers.",
       "features": [
         "A Playwright script with three layers, so a failure points at one of them: capture, sign-in and the flow.",
         "Gate handling by dismissal through the interface, with the choice recorded.",
@@ -758,7 +758,7 @@
         "troubleshooting",
         "backups"
       ],
-      "description": "Use when setting up or debugging a self-hosted Buzz relay with Docker Compose. Covers the hostname rules, membership roster, domain changes, layered agent debugging and backups.",
+      "description": "Use when setting up a self-hosted Buzz relay. It also covers debugging with Docker Compose. Covers the hostname rules, membership roster, domain changes, layered agent debugging and backups.",
       "features": [
         "Setup order for the environment file, the URL block, the start command and the liveness check.",
         "Membership roster rules for humans and agents on a closed relay.",
@@ -801,7 +801,7 @@
         "naming",
         "ecommerce"
       ],
-      "description": "Use when auditing an existing storefront catalog for naming, SKU, category, price, media and feed drift without changing live data. Produces a per-row CSV of defects and a named-rule report.",
+      "description": "Use when auditing a storefront catalog for drift. Produces a per-row CSV of defects and a named-rule report, without changing live data.",
       "features": [
         "Confirms the live host and the data-of-record file before any rule runs.",
         "Joins the repo catalog to the public feed and asserts that every field both expose agrees.",
@@ -845,7 +845,7 @@
         "vision",
         "ecommerce"
       ],
-      "description": "Use when a catalog row has a missing, placeholder or wrong product image or description and you must find a real pack shot or manufacturer copy that provably matches that exact SKU. Covers search, live URL checks, vision verification and an honest residual list.",
+      "description": "Use when a catalog product image is missing or wrong. Covers search, live URL checks, vision verification and an honest residual list.",
       "features": [
         "Two-stage pipeline: a search harvest that stores candidate page URLs, then a verify stage that extracts and checks image candidates.",
         "Fail-fast URL gates before any model call: HTTP 200, an image content type, known placeholder filenames, and a brand or product token in the URL.",
@@ -887,7 +887,7 @@
         "barcode",
         "catalog"
       ],
-      "description": "Use when turning barcode-tagged or multi-angle product photos into catalog media, identity, enrichment and on-domain certificate links. Covers a read-only preflight audit, barcode grouping, OCR, gallery replacement and read-back checks.",
+      "description": "Use when turning product photos into catalog media. Covers a read-only preflight audit, barcode grouping, OCR, gallery replacement and read-back checks.",
       "features": [
         "Read-only preflight audit: scope, extension casing, duplicates, readability, orientation and barcode grouping, with reconciled totals.",
         "Barcode-first grouping in capture-time order, with quarantine for conflicts.",
@@ -931,7 +931,7 @@
         "media",
         "safety"
       ],
-      "description": "Use when preflighting catalog writes, price changes, media replacement or new catalog items. Proves identity, sibling coverage, sell-unit pricing and compliance gates before any write, then requires a read-back check.",
+      "description": "Use when preflighting catalog writes or price changes. Proves identity, sibling coverage, sell-unit pricing and compliance gates before any write, then requires a read-back check.",
       "features": [
         "Deterministic identity matching in a fixed order, with ambiguity treated as a blocker.",
         "Full parent context for every match: variants, categories, collection, channels, gallery and variant-image links.",
@@ -976,7 +976,7 @@
         "file-permissions",
         "staging"
       ],
-      "description": "Use when a secret must reach a local env file without passing through chat. Covers operator-entered staging, file permissions, gitignore-first, fingerprint-only verification, and clipboard hygiene.",
+      "description": "Use when a secret must reach an env file, not chat. Covers operator-entered staging, file permissions, gitignore-first, fingerprint-only verification, and clipboard hygiene.",
       "features": [
         "A staging sequence: prepare the file, ignore it in version control, let the operator write the value locally, then verify.",
         "Fingerprint-only verification: prefix, length, line count, permissions, and an ignore check.",
@@ -1019,7 +1019,7 @@
         "parallel-work",
         "verification"
       ],
-      "description": "Use when Claude Code should lead a parallel Agent Teams swarm on a multi-module task. Sets the spawn contract, file ownership, and proof fields.",
+      "description": "Use when Claude Code leads an Agent Teams swarm. Covers a parallel swarm on a multi-module task. Sets the spawn contract, file ownership, and proof fields.",
       "features": [
         "A spawn prompt template that forces a real team, not subagents, and names each teammate's file ownership.",
         "Rules for plan approval before risky writes, and for a lead that waits for every teammate.",
@@ -1065,7 +1065,7 @@
         "launchd",
         "oauth"
       ],
-      "description": "Use when wiring a local Claude CLI bridge into Hermes as a provider. Covers bridge install, custom provider registration, launchd keepalive, and OAuth re-login.",
+      "description": "Use when wiring a Claude CLI bridge into Hermes. The bridge is wired in as a provider. Covers bridge install, custom provider registration, launchd keepalive, and OAuth re-login.",
       "features": [
         "OpenAI-compatible `/v1/models` and `/v1/chat/completions` shim bound to `127.0.0.1` only.",
         "A Hermes `custom_providers` entry with a pinned model map that drives the picker.",
@@ -1107,7 +1107,7 @@
         "effort",
         "launchd"
       ],
-      "description": "Use when choosing, pinning, or switching the Claude Code CLI model, effort level, or fallback, or exposing extra models through a local bridge.",
+      "description": "Use when choosing or switching the Claude Code CLI model. Covers pinning, effort level, fallback, and exposing extra models through a local bridge.",
       "features": [
         "A table of aliases and their intent, plus pinned full slugs for stable registration.",
         "The switching precedence order, from session flag down to managed policy.",
@@ -1198,7 +1198,7 @@
         "dns",
         "verification"
       ],
-      "description": "Use when deploying a static site to Cloudflare Pages headlessly. Covers a token-safe deploy script, a content-verification gate that an HTTP 200 alone does not satisfy, custom-domain order, cache busting, and rollback from a backup.",
+      "description": "Use when deploying a static site to Cloudflare Pages. The deploy runs headlessly. Covers a token-safe deploy script, a content-verification gate that an HTTP 200 alone does not satisfy, custom-domain order, cache busting, and rollback from a backup.",
       "features": [
         "A deploy flow that reads the token from the secrets store at run time and sets it only in the deploy process's environment.",
         "A content-verification gate on the live pages and assets.",
@@ -1244,7 +1244,7 @@
         "mfa",
         "serverless"
       ],
-      "description": "Use when building a Cloudflare Worker app with KV storage and a cron snapshot, gated behind Cloudflare Access for public-internet users. Covers server-side secrets, disabling preview hosts, JWT verification, free-plan limits, fail-visible data, and verification.",
+      "description": "Use when building a Cloudflare Worker with KV storage. It has a cron snapshot and sits behind Cloudflare Access for public-internet users. Covers server-side secrets, disabling preview hosts, JWT verification, free-plan limits, fail-visible data, and verification.",
       "features": [
         "A snapshot loop: a cron trigger fetches each source, wraps each result with its status and time, and writes one KV key.",
         "Access gating with a single allow-list policy, and session and MFA settings.",
@@ -1288,7 +1288,7 @@
         "dream-cycle",
         "local-llm"
       ],
-      "description": "Use when installing, connecting or troubleshooting the Clude cognitive memory sidecar, its MCP server, or its dream and reflection daemon next to an existing agent memory system. Clude is additive and must not replace the memory systems already in place.",
+      "description": "Use when installing or fixing the Clude memory sidecar. It covers its MCP server and dream or reflection daemon, beside an existing memory system. Clude is additive and must not replace the memory systems already in place.",
       "features": [
         "A memory-role split that says which layer owns which memory types.",
         "A local stack: a Postgres-backed store started with the Supabase CLI, the clude-bot MCP server, and a runner for scheduled cycles.",
@@ -1335,7 +1335,7 @@
         "sandbox",
         "cli"
       ],
-      "description": "Use when driving the OpenAI Codex CLI on a local repo task. Covers exec flags, sandbox modes, timeouts, and checking changes that landed.",
+      "description": "Use when driving the OpenAI Codex CLI on a local repo. Covers exec flags, sandbox modes, timeouts, and checking changes that landed.",
       "features": [
         "A direct `codex exec` pattern with the working directory, sandbox mode, and model set explicitly.",
         "A sandbox ladder: read-only, workspace-write, and danger-full-access, with a rule that the broadest mode needs the operator's approval.",
@@ -1382,7 +1382,7 @@
         "compression",
         "operator-gate"
       ],
-      "description": "Use when batch-processing storefront product photos or 3D assets, pruning a shoot folder to hero shots, or watching a shared photo folder, with a visual operator gate before anything reaches the catalog.",
+      "description": "Use when batch-processing storefront product photos. Covers 3D assets, pruning a shoot folder to hero shots, watching a shared photo folder, and a visual operator gate before anything reaches the catalog.",
       "features": [
         "Coverage scan of the full source tree before any run, so partial work is visible.",
         "Deterministic classifier for whole-product shots versus close-ups, measured on the output.",
@@ -1428,7 +1428,7 @@
         "matrix",
         "citations"
       ],
-      "description": "Use when comparing competitor storefronts with a cited feature matrix. Every cell cites a fetched URL or says UNKNOWN; output is a draft PR.",
+      "description": "Use when comparing competitor storefronts by feature. Every cell cites a fetched URL or says UNKNOWN; output is a draft PR.",
       "features": [
         "A selection rule and an exclusion log, written before any page is read.",
         "A cached, rate-limited fetcher that logs every request, and that serves as the evidence appendix.",
@@ -1515,7 +1515,7 @@
         "compliance",
         "webhook"
       ],
-      "description": "Use when wiring commerce opt-in and opt-out events to an email or contact-list service so that an opt-out always wins, including out-of-order and duplicate events. Covers a durable suppression ledger, event-time ordering and a five-case test matrix.",
+      "description": "Use when wiring opt-ins and opt-outs to email services. Covers a durable suppression ledger, event-time ordering and a five-case test matrix, so that an opt-out always wins.",
       "features": [
         "Durable suppression table keyed by a hash of the lower-cased address and the brand.",
         "Ordering by the event's own timestamp, never by arrival time.",
@@ -1554,7 +1554,7 @@
         "ecommerce",
         "ranked-backlog"
       ],
-      "description": "Use when auditing one storefront's conversion and UX on mobile and desktop. Read-only, ranked backlog with evidence per row.",
+      "description": "Use when auditing a storefront's conversion and UX. Read-only, ranked backlog with evidence per row.",
       "features": [
         "Pre-flight checklist that pins the live URL, viewports, catalog size and compliance framing before any browsing.",
         "Click policy that allows only public, idempotent links, plus one visible confirm click on storefronts you operate.",
@@ -1601,7 +1601,7 @@
         "monitoring",
         "hermes"
       ],
-      "description": "Use when authoring or debugging a cron job that runs CI, repo watches or other automation. Covers toolsets, silent failures, honest reporting and escalation.",
+      "description": "Use when authoring or debugging a cron job. The job runs CI, repo watches or other automation. Covers toolsets, silent failures, honest reporting and escalation.",
       "features": [
         "Minimum-toolset table for common watchdog tasks, so the agent can run its commands.",
         "No-agent script mode for threshold checks: silent when healthy, one line when breached.",
@@ -1640,7 +1640,7 @@
         "coding-agent",
         "sandbox"
       ],
-      "description": "Use when running Cursor's cursor-agent CLI headless for code inspection or edits. Covers login, print-mode flags, sandbox limits, and host-side verification.",
+      "description": "Use when running Cursor's cursor-agent CLI headless. Covers code inspection or edits, login, print-mode flags, sandbox limits, and host-side verification.",
       "features": [
         "Login through a device-code flow that the operator completes in a browser.",
         "Non-interactive print mode with explicit trust, output, model, and read-only flags.",
@@ -1773,7 +1773,7 @@
         "verification",
         "data-pipeline"
       ],
-      "description": "Use when reviewing a CSV, JSON, or other data deliverable another agent produced, such as a list, extract, or catalog audit, before it merges. Verifies claims by re-execution.",
+      "description": "Use when reviewing another agent's data deliverable. Covers CSV, JSON and other data outputs, such as a list, extract, or catalog audit, before a merge. Verifies claims by re-execution.",
       "features": [
         "A verdict model with three outcomes: APPROVE, NEEDS_CHANGES, or ESCALATE when the spec's intent is disputed.",
         "A re-execution procedure: builder checker, independent recount, rebuild from raw, and a byte-level hash comparison.",
@@ -1819,7 +1819,7 @@
         "stub-detection",
         "audit"
       ],
-      "description": "Use when an orchestrator must verify that a delegated worker's output is real work and not a stub. Reads files on disk and returns a REAL, STUB, or SUSPECT verdict.",
+      "description": "Use when a delegated worker's output must be checked. An orchestrator confirms it is real work, not a stub. Reads files on disk and returns a REAL, STUB, or SUSPECT verdict.",
       "features": [
         "A fixed procedure: locate the artifact, snapshot paths, sizes, and times, check row counts and key sets, reconstruct the write order, verify cited evidence, and write the verdict.",
         "Set comparison of the input keys against the results keys, which catches phantom and missing rows that a line count misses.",
@@ -1907,7 +1907,7 @@
         "vendors",
         "accuracy"
       ],
-      "description": "Use when answering questions about configuration, keys, vendors, UI, how-to steps or architecture. Load an authoritative source before answering or acting, because a guessed answer on these topics is a hard failure.",
+      "description": "Use when answering config or vendor questions. The same applies to keys, UI, how-to steps or architecture. Load an authoritative source before answering or acting, because a guessed answer on these topics is a hard failure.",
       "features": [
         "A six-class trigger list that decides when the doctrine applies.",
         "A source-selection ladder: local skills or documentation, then vendor documentation, then a connected domain tool, then the operator.",
@@ -1996,7 +1996,7 @@
         "orchestration",
         "status-reporting"
       ],
-      "description": "Use when claiming a background job is running or finished. Requires a process ID, a fresh process check, and read output before any status report.",
+      "description": "Use when claiming a background job is running or done. Requires a process ID, a fresh process check, and read output before any status report.",
       "features": [
         "Requires a process ID and a fresh `ps` line in the same message as any running claim.",
         "Reports a dead process with no result as a hard failure, in plain words.",
@@ -2046,7 +2046,7 @@
         "review",
         "verification"
       ],
-      "description": "Use when several open, reviewed, docs-only pull requests should land together as one draft pull request. Covers snapshotting live state, skip rules, per-PR commits copied from each source head, gates before push, and a verification block for the description.",
+      "description": "Use when reviewed docs PRs should land as one draft. Several open, reviewed, docs-only pull requests are combined into one draft pull request. Covers snapshotting live state, skip rules, per-PR commits copied from each source head, gates before push, and a verification block for the description.",
       "features": [
         "A scratch worktree, so the working checkout is not touched.",
         "A live snapshot of each source pull request's state, base, head, and file list, checked against the fetched head commit.",
@@ -2089,7 +2089,7 @@
         "worktree",
         "local-inference"
       ],
-      "description": "Use when pairing a local DeepSeek engine with two coding agents on one Mac. Covers worktree isolation, role split, approval gates, and config for each client.",
+      "description": "Use when two coding agents share a local DeepSeek engine. The engine runs on one Mac. Covers worktree isolation, role split, approval gates, and config for each client.",
       "features": [
         "One OpenAI-compatible endpoint on loopback that every client points at.",
         "A role split: a breadth client for reconnaissance and patch drafts, a precision client for narrow edits and diff cleanup, and a judge for comparison and tests.",
@@ -2134,7 +2134,7 @@
         "apple-silicon",
         "model-management"
       ],
-      "description": "Use when operating the DS4 DeepSeek inference server on macOS. Covers launchd setup, health checks, safe restarts, model switches, and multi-Mac engine updates.",
+      "description": "Use when operating the DS4 inference server on macOS. It serves DeepSeek models. Covers launchd setup, health checks, safe restarts, model switches, and multi-Mac engine updates.",
       "features": [
         "Health checks for the process, the listening port, the served model id, and upstream currency.",
         "A launchd configuration that loads the correct engine flags, the Metal shader environment, and the MTP draft model.",
@@ -2179,7 +2179,7 @@
         "cross-site",
         "rollout"
       ],
-      "description": "Use when turning lessons from past e-commerce launches into one reusable readiness checker that runs against any storefront URL. Covers the lesson record format, portable checks, consolidation timing and checking a new site against known incidents.",
+      "description": "Use when building a storefront readiness checker. Covers the lesson record format, portable checks, consolidation timing and checking a new site against known incidents.",
       "features": [
         "A fixed record shape for every catch: surface, symptom, root cause, portable check and evidence reference.",
         "One list per surface, such as checkout, payments, catalog, email consent, speed or search files.",
@@ -2221,7 +2221,7 @@
         "self-improvement",
         "deployment"
       ],
-      "description": "Use when installing, configuring, verifying or maintaining the Eidolon self-improvement layer on a Hermes Agent, covering the SOUL.md identity file, the dream-cycle handler, the integrity watchdog, scheduled reports, and the operator-policy rules that govern its changes.",
+      "description": "Use when deploying the Eidolon layer on Hermes. Its scope covers the SOUL.md identity file, the dream-cycle handler, the integrity watchdog, scheduled reports, and the operator-policy rules that govern its changes.",
       "features": [
         "A session-end hook and scheduled runs, both driven by one handler.",
         "A risk gate: only low-risk change kinds apply automatically, and unknown kinds fail closed.",
@@ -2270,7 +2270,7 @@
         "planning",
         "verification"
       ],
-      "description": "Use when a Hermes issue needs checking against upstream before you report, file or change anything. Covers upstream verdicts, drift and safe apply.",
+      "description": "Use when a Hermes issue needs an upstream check. Check it before you report, file or change anything. Covers upstream verdicts, drift and safe apply.",
       "features": [
         "Upstream lookup: local clone revision, commit search for the symptom's keywords, and upstream commits and pull requests.",
         "Drift check: how far the local install is behind upstream main, and which of those commits touch the affected area.",
@@ -2319,7 +2319,7 @@
         "halting",
         "agent-behavior"
       ],
-      "description": "Use when an agent loops in analysis, narrates progress without acting, or must stop a running loop. Set read limits, pair every progress claim with a change, and halt processes so they stay halted.",
+      "description": "Use when an agent loops or narrates without acting. It also applies when a running loop must stop. Set read limits, pair every progress claim with a change, and halt processes so they stay halted.",
       "features": [
         "A read budget: decide after three sources, and never pass five without a decision or an action.",
         "A rule that a progress claim needs a state change in the same turn.",
@@ -2362,7 +2362,7 @@
         "macos",
         "cluster"
       ],
-      "description": "Use when building a distributed MLX inference cluster across two or more Apple Silicon Macs. Covers install, direct-link networking, storage, model placement, and recovery.",
+      "description": "Use when building a distributed MLX inference cluster. It runs across two or more Apple Silicon Macs. Covers install, direct-link networking, storage, model placement, and recovery.",
       "features": [
         "A repeatable install path that uses the packaged macOS app for current versions, with a source-install fallback for older ones.",
         "Static addressing for a direct link, configured so it survives reboots.",
@@ -2407,7 +2407,7 @@
         "benchmarking",
         "automation"
       ],
-      "description": "Use when picking MLX models for each memory tier of an EXO cluster. Covers discovery, size bands, same-band benchmarking, champion promotion, and report evidence rules.",
+      "description": "Use when picking MLX models per EXO memory tier. Covers discovery, size bands, same-band benchmarking, champion promotion, and report evidence rules for an EXO cluster.",
       "features": [
         "Multi-strategy discovery: recently modified repositories, most downloaded repositories, and targeted searches for large model families, deduplicated into one list.",
         "Size classification from the hub's file-tree metadata into memory bands sized to your nodes.",
@@ -2452,7 +2452,7 @@
         "local-llm",
         "model-management"
       ],
-      "description": "Use when registering uncensored MLX models on an EXO cluster. Covers curated discovery, RAM-budget scoring, API registration, download, verification, and state tracking.",
+      "description": "Use when registering uncensored MLX models on EXO. It applies to an EXO cluster. Covers curated discovery, RAM-budget scoring, API registration, download, verification, and state tracking.",
       "features": [
         "Curated discovery from the configured collections, filtered to MLX text-generation models.",
         "A hard RAM-budget gate, then a composite ranking.",
@@ -2496,7 +2496,7 @@
         "verification",
         "headless-cli"
       ],
-      "description": "Use when delegating repository changes to a headless coding agent CLI while the orchestrator keeps scope, safety, review, and verification.",
+      "description": "Use when delegating repo edits to a headless coding CLI. The orchestrator keeps scope, safety, review, and verification.",
       "features": [
         "A workflow that establishes repository doctrine and a clean baseline before any delegation.",
         "A delegation prompt template that states the exact path, the reading list, numbered invariants, prohibited actions, required commands, and a report schema.",
@@ -2542,7 +2542,7 @@
         "router",
         "model-discovery"
       ],
-      "description": "Use when setting up a mixture-of-agents preset that draws on free-tier model providers through a local OpenAI-compatible router. Covers install, live model discovery, and preset setup.",
+      "description": "Use when setting up a free-tier mixture-of-agents preset. Draws on free-tier model providers through a local OpenAI-compatible router. Covers install, live model discovery, and preset setup.",
       "features": [
         "A local router that exposes one OpenAI-compatible endpoint over several provider keys.",
         "Live model discovery from the router's catalog, with a fallback when the catalog has no ranking metadata.",
@@ -2592,7 +2592,7 @@
         "push-safety",
         "hygiene"
       ],
-      "description": "Use when pushing from a repository or when a remote URL may carry a token. Covers redacted remote checks, credential helpers, explicit push refspecs, and token rotation.",
+      "description": "Use when pushing from a repo or checking a remote URL. A remote URL may carry a token. Covers redacted remote checks, credential helpers, explicit push refspecs, and token rotation.",
       "features": [
         "A redacted scan of repository remotes for embedded user information and token-shaped strings.",
         "A check of the global git configuration for URL rewrite rules that re-inject credentials.",
@@ -2636,7 +2636,7 @@
         "ci",
         "regression-tests"
       ],
-      "description": "Use when carrying a GitHub issue to a verified pull request with honest CI reporting. Covers reading the full thread, sweeping for duplicate work, validating the premise against design intent, fixing the bug class, proving the regression test, and reporting CI from live evidence.",
+      "description": "Use when carrying a GitHub issue to a verified PR. It reports CI honestly. Covers reading the full thread, sweeping for duplicate work, validating the premise against design intent, fixing the bug class, proving the regression test, and reporting CI from live evidence.",
       "features": [
         "A read of the issue body and every comment, plus the repository's contribution instructions.",
         "A duplicate sweep of pull requests and recent commits, using the issue number and at least two keyword variants.",
@@ -2684,7 +2684,7 @@
         "scanning",
         "supply-chain"
       ],
-      "description": "Use when a GitHub repo, skill, or MCP server must be checked before it is installed or run. Covers quarantine, classification, scanner order, conservative findings, and hard stop conditions.",
+      "description": "Use when a GitHub repo or skill needs a preflight scan. An MCP server must be checked the same way before it is installed or run. Covers quarantine, classification, scanner order, conservative findings, and hard stop conditions.",
       "features": [
         "A quarantine step that keeps downloaded code out of production paths and out of any execution path.",
         "A classification step that sorts a repository into skill, MCP, and execution risk.",
@@ -2772,7 +2772,7 @@
         "timeouts",
         "connection-pool"
       ],
-      "description": "Use when diagnosing or fixing Graphiti MCP timeouts, CancelledError hangs, Neo4j connection-pool pressure, MCP keepalive drops, or a Graphiti write that fails with missing credentials. Covers the tuning ladder and the event-loop and embedder traps.",
+      "description": "Use when diagnosing Graphiti timeouts or pool pressure. It also applies to hangs, keepalive drops and writes that fail with missing credentials. Covers the tuning ladder and the event-loop and embedder traps.",
       "features": [
         "A health check of the Neo4j listeners and the HTTP query endpoint, before any tuning.",
         "A check of the server's live configuration, so no key name is guessed.",
@@ -2814,7 +2814,7 @@
         "git",
         "cli"
       ],
-      "description": "Use when driving the Grok Build CLI on a named git branch with its memory feature on. Covers memory setup, prompt ordering, interrupted runs, and safe commits.",
+      "description": "Use when driving the Grok Build CLI on a named branch. Runs with its memory feature on. Covers memory setup, prompt ordering, interrupted runs, and safe commits.",
       "features": [
         "Memory is enabled in two places: an environment variable for the process and a configuration entry for the tool.",
         "A prompt order that runs memory consolidation before the task, so the agent consolidates, then dreams, then edits.",
@@ -2866,7 +2866,7 @@
         "orchestration",
         "hermes"
       ],
-      "description": "Use when setting up Hermes with several xAI Grok roles over OAuth. Covers role-to-model mapping, delegation limits, memory settings and profiles.",
+      "description": "Use when setting up Hermes with several Grok roles. The roles use xAI OAuth. Covers role-to-model mapping, delegation limits, memory settings and profiles.",
       "features": [
         "Role-to-model mapping for an orchestrator, a dev specialist and a DevOps manager.",
         "Delegation settings: which model sub-agents use, how many run at once, how deep they can nest, and how long each may run.",
@@ -2913,7 +2913,7 @@
         "model-routing",
         "review"
       ],
-      "description": "Use when writing any work order or task card for an agent or a coding harness. Sets the card shape, pinned model, done criteria, and review handoff.",
+      "description": "Use when writing a work order or task card for an agent. Applies to coding harnesses too. Sets the card shape, pinned model, done criteria, and review handoff.",
       "features": [
         "A card template with fixed slots: goal, purpose, context, spec path, done criteria, constraints, autonomy, evidence, review handoff, and engine.",
         "Rules for outcomes over recipes, for leaner prompts, and for operator rulings quoted verbatim with a date.",
@@ -2960,7 +2960,7 @@
         "orchestration",
         "operations"
       ],
-      "description": "Use when dispatching or steering an async agent run over the Hermes local API. Covers POST, polling, steering, stopping and wedge triage.",
+      "description": "Use when dispatching or steering an agent run. The run is dispatched over the Hermes local API. Covers POST, polling, steering, stopping and wedge triage.",
       "features": [
         "Liveness check and secret loading that keeps keys out of logs and process environments.",
         "`POST /v1/runs` dispatch with explicit model and provider, plus an optional idempotency key.",
@@ -3051,7 +3051,7 @@
         "api-keys",
         "debugging"
       ],
-      "description": "Use when a Hermes provider login or API key fails or looks expired. Covers the runtime credential check, credential pool cleanup and env-versus-pool confusion.",
+      "description": "Use when a Hermes provider login or key fails. The login or key may look expired. Covers the runtime credential check, credential pool cleanup and env-versus-pool confusion.",
       "features": [
         "Status check for an OAuth provider, with the fields that matter and the ones that can be stale.",
         "Runtime resolution check, which is the ground-truth test for whether inference works.",
@@ -3093,7 +3093,7 @@
         "configuration",
         "read-only"
       ],
-      "description": "Use when you need a read-only snapshot of Hermes profile config for an audit. Covers the fields to capture, what empty fallbacks mean and how to cross-check auth.",
+      "description": "Use when auditing a Hermes profile config snapshot. The snapshot is read-only. Covers the fields to capture, what empty fallbacks mean and how to cross-check auth.",
       "features": [
         "One record per profile: primary provider and model, ordered fallback chain, memory provider and its mode.",
         "Gateway topology check: whether a gateway serves one profile or all of them.",
@@ -3137,7 +3137,7 @@
         "backup",
         "rollback"
       ],
-      "description": "Use when reverting a Hermes profile's primary model to a backup without losing later changes. Covers snapshot, block-only restore, verification and reporting.",
+      "description": "Use when reverting a Hermes profile's model to a backup. Later changes are kept. Covers snapshot, block-only restore, verification and reporting.",
       "features": [
         "Inventory of the snapshot and the live configs before anything changes.",
         "A \"before\" snapshot of the live state, taken so the revert itself can be audited and undone.",
@@ -3180,7 +3180,7 @@
         "profiles",
         "config-yaml"
       ],
-      "description": "Use when adding or removing toolsets or MCP servers in a Hermes profile config. Covers live-config checks, CLI limits, list-valued keys and operator-approved edits.",
+      "description": "Use when changing Hermes toolsets or MCP servers. The change is made in a profile config. Covers live-config checks, CLI limits, list-valued keys and operator-approved edits.",
       "features": [
         "Live-config check that reads the full list, not a truncated view.",
         "Doc check for toolsets that the docs say must be enabled in config.",
@@ -3225,7 +3225,7 @@
         "observability",
         "cost-control"
       ],
-      "description": "Use when rolling out or auditing Hermes fallback chains across profiles. Covers the chain rules, credential gaps, verified writes, watching for silent fallbacks and rollback.",
+      "description": "Use when rolling out or auditing Hermes fallback chains. The chains span several profiles. Covers the chain rules, credential gaps, verified writes, watching for silent fallbacks and rollback.",
       "features": [
         "Preflight checks on the CLI verbs and on any endpoint a tier depends on.",
         "Credential audit that marks each profile that cannot use a tier, without stopping the rollout.",
@@ -3270,7 +3270,7 @@
         "diagnostics",
         "telegram"
       ],
-      "description": "Use when the first model call after a Hermes gateway restart takes about 30 seconds. Covers the cold-path cause, how to measure it and when a fix is worth it.",
+      "description": "Use when a Hermes gateway's first model call is slow. It takes about 30 seconds after a restart. Covers the cold-path cause, how to measure it and when a fix is worth it.",
       "features": [
         "Symptom profile: which calls are slow, and what the second call looks like.",
         "Evidence checklist: auth exchange timing, poll timing and the gap since the last activity.",
@@ -3312,7 +3312,7 @@
         "diagnostics",
         "operations"
       ],
-      "description": "Use when a Hermes messaging gateway stops responding or Telegram polling fails. Covers service identity, logs, restart discipline, failure signatures and health checks.",
+      "description": "Use when a Hermes gateway stops responding. It also applies when Telegram polling fails. Covers service identity, logs, restart discipline, failure signatures and health checks.",
       "features": [
         "Identify the live gateway by its service label, command line, lock file and environment, not by a name search.",
         "Liveness check from logs and launchd state, not from a port probe.",
@@ -3404,7 +3404,7 @@
         "attachments",
         "cross-platform"
       ],
-      "description": "Use when connecting a Hermes gateway on one machine to a Buzz relay used from another machine. Covers the identity rules, admission checks, the outbound CLI, verification and media attachments.",
+      "description": "Use when a Hermes gateway reaches a remote Buzz relay. The gateway runs on one machine and the relay is used from another. Covers the identity rules, admission checks, the outbound CLI, verification and media attachments.",
       "features": [
         "Architecture choice between a native gateway and a Buzz-owned runtime.",
         "Dedicated agent identity, with the secret entered locally and never in chat or on a command line.",
@@ -3449,7 +3449,7 @@
         "judge-gate",
         "dispatch"
       ],
-      "description": "Use when an orchestrator dispatches a kanban board to coding harnesses such as Claude Code, Codex, and Grok Build. It covers lane routing, worktree isolation, the independent judge gate, and the card completion contract.",
+      "description": "Use when dispatching a kanban board to coding harnesses. An orchestrator runs this for harnesses such as Claude Code, Codex, and Grok Build. It covers lane routing, worktree isolation, the independent judge gate, and the card completion contract.",
       "features": [
         "**Lane routing by task shape.** Cross-layer and multi-module work goes to Claude Code as an agent team, bounded mechanical edits go to Codex, and broad scaffolding or adversarial investigation goes to Grok Build.",
         "**Real phase barriers.** Dependent cards receive their parent card ids at creation, so a child stays in todo until its parents finish.",
@@ -3512,7 +3512,7 @@
         "providers",
         "triage"
       ],
-      "description": "Use when installing, configuring, verifying or debugging Hermes memory providers, meaning Hindsight in cloud or local mode, Omega, Graphiti, or a bridge that fans out across them. Covers the setup wizard, key slots, per-profile isolation, retain and recall proof, and a triage ladder for failed writes.",
+      "description": "Use when installing or debugging Hermes memory providers. They include Hindsight, Omega, Graphiti, or a bridge across them. Covers the setup wizard, key slots, per-profile isolation, retain and recall proof, and a triage ladder for failed writes.",
       "features": [
         "A routing table that says which store answers which kind of question.",
         "A setup path that uses the product's own wizard, with the constraints the wizard imposes.",
@@ -3556,7 +3556,7 @@
         "cache",
         "debugging"
       ],
-      "description": "Use when the Hermes model picker shows zero, duplicate or stale models. Covers config-versus-session truth, picker data formats, cache refresh and picker implementation bugs.",
+      "description": "Use when the Hermes model picker shows wrong models. It shows zero, duplicate or stale models. Covers config-versus-session truth, picker data formats, cache refresh and picker implementation bugs.",
       "features": [
         "Ordered check of live session state, config file and provider endpoint.",
         "Read-only inventory script that prints what the picker would show.",
@@ -3602,7 +3602,7 @@
         "auxiliary",
         "subscriptions"
       ],
-      "description": "Use when wiring a model provider, fallback chain or auxiliary lane, or sweeping a retired model from every route. Covers slugs, lanes, pools and quota signals.",
+      "description": "Use when wiring a model provider or fallback chain. It also applies to auxiliary lanes and to sweeping a retired model from every route. Covers slugs, lanes, pools and quota signals.",
       "features": [
         "Docs-first procedure: read the current official page before any local note.",
         "Lane-selection rules that keep the implementer model apart from advisor and review lanes.",
@@ -3699,7 +3699,7 @@
         "gateway",
         "debugging"
       ],
-      "description": "Use when a Hermes profile's config.yaml fails to parse, or a model change lands in the wrong profile. Covers scope checks, YAML repair, schema checks and restart verification.",
+      "description": "Use when a profile's config.yaml will not parse. It also applies when a model change lands in the wrong profile. Covers scope checks, YAML repair, schema checks and restart verification.",
       "features": [
         "Scope check that confirms which config file the running gateway actually reads.",
         "Syntax check and schema check, run as two separate gates.",
@@ -3742,7 +3742,7 @@
         "kanban",
         "roster"
       ],
-      "description": "Use when creating a Hermes profile or copying its skills and MCP servers. Covers fresh creation, selective skill copies, per-profile wiring and kanban pins.",
+      "description": "Use when creating a Hermes profile. It also applies when copying its skills and MCP servers. Covers fresh creation, selective skill copies, per-profile wiring and kanban pins.",
       "features": [
         "Fresh profile creation with a description that doubles as routing text for the kanban decomposer.",
         "Identity check that refuses a profile with only the stock persona.",
@@ -3784,7 +3784,7 @@
         "fallback",
         "orchestration"
       ],
-      "description": "Use when designing or maintaining role routing, runnable agent profiles, identity documents, and provider fallback chains for a multi-agent Hermes fleet.",
+      "description": "Use when designing or maintaining role routing. Covers runnable agent profiles, identity documents, and provider fallback chains for a multi-agent Hermes fleet.",
       "features": [
         "A map of the four source-of-truth surfaces, with the owner of each.",
         "A rule that identity and roster documents carry no model names, only pointers to the live configuration.",
@@ -3831,7 +3831,7 @@
         "credentials",
         "scoped-access"
       ],
-      "description": "Use when one API key must reach only some Hermes profiles through the secrets command helper instead of bulk Bitwarden injection. Covers the helper script, per-profile config, override safety, and fingerprint checks against the store.",
+      "description": "Use when a key must reach only some Hermes profiles. It must reach them through the secrets command helper, not bulk Bitwarden injection. Covers the helper script, per-profile config, override safety, and fingerprint checks against the store.",
       "features": [
         "A short helper script that resolves a single key from the store.",
         "Per-profile command-helper settings, with an override guard that keeps keys set by other loaders.",
@@ -3875,7 +3875,7 @@
         "github",
         "sharing"
       ],
-      "description": "Use when publishing a Hermes skill to a public GitHub repo and a community hub. Covers account checks, credit, install URL proof and the hub submission.",
+      "description": "Use when publishing a Hermes skill to GitHub or a hub. Publishing goes to a public GitHub repo and a community hub. Covers account checks, credit, install URL proof and the hub submission.",
       "features": [
         "Account check before any repository is created or pushed.",
         "Skill folder layout with a license, a readme and a credited attribution section.",
@@ -3917,7 +3917,7 @@
         "threads",
         "automation"
       ],
-      "description": "Use when an agent must send or read Slack messages through the Web API directly. Covers token handling, mention IDs, thread replies and the limits of bot-to-bot wakeups.",
+      "description": "Use when an agent sends or reads Slack messages directly. The route is the Slack Web API. Covers token handling, mention IDs, thread replies and the limits of bot-to-bot wakeups.",
       "features": [
         "Token handling that keeps the value out of output and out of the conversation.",
         "The five Web API calls that cover identity, lookup, posting and reading.",
@@ -3962,7 +3962,7 @@
         "operator",
         "guidance"
       ],
-      "description": "Use when a Hermes user needs the right slash command for a running task. Covers the decision rule for steer, queue, background and interrupt, plus goal, loop and plan.",
+      "description": "Use when a user needs the right slash command. The task is already running. Covers the decision rule for steer, queue, background and interrupt, plus goal, loop and plan.",
       "features": [
         "Decision table for a message sent during a running turn: background, steer, queue, interrupt, or side question.",
         "Decision table for the shape of the work: goal, loop, plan, compress and undo.",
@@ -4004,7 +4004,7 @@
         "course-correction",
         "handoff"
       ],
-      "description": "Use when creating a kanban task that will spawn coding, architecture, or analysis work. Writes a spec file first, then runs readiness and course-correct gates.",
+      "description": "Use when a kanban task spawns coding or analysis work. Covers architecture work too. Writes a spec file first, then runs readiness and course-correct gates.",
       "features": [
         "A spec file written beside the task, before any worker is dispatched, with a referenced path in the task body.",
         "A readiness gate in which the worker blocks once with three to five task-specific checks before it starts.",
@@ -4055,7 +4055,7 @@
         "issues",
         "pull-requests"
       ],
-      "description": "Use when filing an issue or pull request to the Hermes upstream project. Covers ruling out local causes, deduplication, issue-first scope, small diffs and evidence.",
+      "description": "Use when filing an issue or pull request upstream. The target is the Hermes upstream project. Covers ruling out local causes, deduplication, issue-first scope, small diffs and evidence.",
       "features": [
         "Local-cause check: a window of your own tool calls before the incident, to rule out self-inflicted events.",
         "Deduplication search across open and closed issues and pull requests.",
@@ -4099,7 +4099,7 @@
         "daemon",
         "private-network"
       ],
-      "description": "Use when a Hermes web UI must be reachable from a phone over a private network. Covers a private-address bind, the daemon start, a debug ladder and separate SSH checks.",
+      "description": "Use when a Hermes web UI must be reachable from a phone. The route runs over a private network. Covers a private-address bind, the daemon start, a debug ladder and separate SSH checks.",
       "features": [
         "Daemon start with a bind address you choose, and a status check that shows the bound address.",
         "Reachability check against the private network address, not localhost.",
@@ -4140,7 +4140,7 @@
         "retain",
         "recall"
       ],
-      "description": "Use when storing or retrieving long-term agent memories through the Hindsight memory system, diagnosing its daemon or retain failures, choosing its cloud or local mode, or running a bridge that reads Hindsight and mirrors facts to another store.",
+      "description": "Use when storing or retrieving long-term agent memories. It also covers the Hindsight daemon, retain failures, cloud or local mode, and bridges to another store.",
       "features": [
         "Three modes with a rule for choosing among them.",
         "A configuration-resolution order, and the file-name trap that disables the provider silently.",
@@ -4185,7 +4185,7 @@
         "install",
         "verification"
       ],
-      "description": "Use when installing the Hindsight coding-agents package in cloud mode on a host, so every supported coding harness writes to one designated memory bank. Captures a baseline, pins routing keys, backs up harness configs, and verifies that no extra bank or mental model appeared.",
+      "description": "Use when installing cloud-mode Hindsight coding agents. The goal is that every supported harness writes to one designated memory bank. Captures a baseline, pins routing keys, backs up harness configs, and verifies that no extra bank or mental model appeared.",
       "features": [
         "A baseline capture of banks, bank configuration and mental models before any change.",
         "A coding-agent configuration file with opt-in paths and a path-to-bank map.",
@@ -4271,7 +4271,7 @@
         "restart",
         "incident"
       ],
-      "description": "Use when a process restarted, quit, or died on its own and the cause must be found from evidence. Covers timelines, ranked elimination, probe hygiene, and an honest report.",
+      "description": "Use when a process quit, died, or restarted on its own. The cause must be found from evidence. Covers timelines, ranked elimination, probe hygiene, and an honest report.",
       "features": [
         "A timeline builder that normalizes timezones before correlation.",
         "A ranked list of likely causes for a self-restart, with an elimination step for each.",
@@ -4315,7 +4315,7 @@
         "money-path",
         "independence"
       ],
-      "description": "Use when briefing a second, read-only session to audit a composed code path, such as checkout, payment, or access gates, for defects that no single diff shows.",
+      "description": "Use when briefing a read-only reviewer on a code path. Covers a second, read-only session that audits a composed path, such as checkout, payment, or access gates, for defects that no single diff shows.",
       "features": [
         "A read-only brief that pins one frozen tree and forbids edits, hook installs, secret reads, pushes, and merges.",
         "A pre-read scan with pattern rules for bugs already seen, run before the prose walk.",
@@ -4361,7 +4361,7 @@
         "alerts",
         "multi-host"
       ],
-      "description": "Use when a scheduled agent should watch critical services on two or more Macs, report config drift, and flag upstream releases without changing operator-owned config.",
+      "description": "Use when a scheduled agent watches Mac services. It watches critical services on two or more Macs, reports config drift, and flags upstream releases without changing operator-owned config.",
       "features": [
         "A scope list that names the critical services and the things that are out of scope.",
         "A master and replica model: one host's configuration is the reference, and the other hosts are compared against it.",
@@ -4407,7 +4407,7 @@
         "menus",
         "automation"
       ],
-      "description": "Use when a CLI setup wizard waits for menu input you must provide. Covers PTY launch, arrow-key menus, polling between steps and checking the result.",
+      "description": "Use when a CLI wizard waits for menu input. You must provide that input yourself. Covers PTY launch, arrow-key menus, polling between steps and checking the result.",
       "features": [
         "Launch in a background pseudo-terminal with the terminal tool.",
         "Arrow-key navigation for selection menus, and typed input for literal prompts.",
@@ -4449,7 +4449,7 @@
         "dispatch",
         "diagnostics"
       ],
-      "description": "Use when managing tasks on a Hermes kanban board, such as creating, dispatching, linking, checking status, or diagnosing a run that keeps cycling.",
+      "description": "Use when managing tasks on a kanban board. Covers creating, dispatching, linking, checking status, and diagnosing a Hermes kanban run that keeps cycling.",
       "features": [
         "A command set for listing, showing, creating, linking, commenting, dispatching, and archiving tasks.",
         "A task lifecycle and a run-cycling model, so repeated restarts are read correctly.",
@@ -4494,7 +4494,7 @@
         "orchestration",
         "handoff"
       ],
-      "description": "Use when creating, blocking, unblocking, or splitting a kanban task card, or when a task appears stalled, duplicated, or orphaned on the board.",
+      "description": "Use when creating, blocking, or unblocking a kanban card. Covers splitting a card, and tasks that look stalled, duplicated, or orphaned on the board.",
       "features": [
         "A handoff procedure for moving a lane to a new owner, with an owner-change comment on each in-flight card.",
         "Checks that run before a card is created: a search for an existing card on the same outcome, a read of the live pull-request state, and a check of the lane's engine quota.",
@@ -4538,7 +4538,7 @@
         "dependencies",
         "multi-agent"
       ],
-      "description": "Use when one goal is split across several agent workers on a shared kanban board. Covers card contracts, dependency links, dispatch checks, review gates, blocker routing, and recovery after crashes or timeouts.",
+      "description": "Use when several agent workers share one kanban goal. Covers card contracts, dependency links, dispatch checks, review gates, blocker routing, and recovery after crashes or timeouts.",
       "features": [
         "A card contract: a one-line TELOS naming the mission, and three to seven DONE-MEANS criteria, each checkable by a command, a file, or a cited source.",
         "Dependency links set at creation, so a child waits for its parent without anyone remembering to release it.",
@@ -4591,7 +4591,7 @@
         "triage",
         "stdlib-shadowing"
       ],
-      "description": "Use when a kanban worker crashes or gives up within about two minutes of starting. Matches the failure to a cause before any repair runs.",
+      "description": "Use when a kanban worker crashes or gives up early. Covers failures within about two minutes of starting. Matches the failure to a cause before any repair runs.",
       "features": [
         "A ranked table that maps each log symptom to a cause and a targeted fix.",
         "A check for a stray script in the working directory that shadows a standard-library module.",
@@ -4636,7 +4636,7 @@
         "install",
         "lossless-context"
       ],
-      "description": "Use when installing or repairing a lossless context-engine plugin for Hermes. Covers the three activation steps, registration checks and compaction tuning.",
+      "description": "Use when installing or repairing a Hermes context plugin. It is a lossless context-engine plugin. Covers the three activation steps, registration checks and compaction tuning.",
       "features": [
         "Install order that puts the plugin into the launcher's own environment before enabling it.",
         "Config step through the Hermes command, never by hand edit.",
@@ -4677,7 +4677,7 @@
         "verification",
         "network-migration"
       ],
-      "description": "Use when an infrastructure cutover left stale host, address, or endpoint references behind. Covers live-versus-evidence triage, backups, a re-scan gate, and reporting.",
+      "description": "Use when a cutover left stale host and endpoint names. Stale references can include addresses. Covers live-versus-evidence triage, backups, a re-scan gate, and reporting.",
       "features": [
         "A small, dependency-free scanner that counts matches in live files and in evidence folders separately.",
         "A fixed triage order: live configuration first, then instruction and memory files, then evidence folders.",
@@ -4720,7 +4720,7 @@
         "crawl",
         "seo"
       ],
-      "description": "Use when auditing a live storefront for broken links, redirect chains, sitemap errors and mixed http. Read-only crawl, per-row CSV, draft PR.",
+      "description": "Use when auditing a live storefront for broken links. Read-only crawl, per-row CSV, draft PR.",
       "features": [
         "Robots.txt enforced on every redirect hop, with an RFC 9309 matcher (longest match, Allow wins ties, `$` anchors the end of a URL).",
         "Manual redirect following, one hop at a time, so every hop lands in the chain column.",
@@ -4769,7 +4769,7 @@
         "audit",
         "markdown"
       ],
-      "description": "Use when checking whether a live storefront's product feeds, product pages, structured data and markdown copies agree field by field for every SKU, and whether the structured data is complete enough for shopping agents and merchant listings. Read-only, re-runnable, with a self-test.",
+      "description": "Use when checking live feeds and structured data. Read-only, re-runnable, with a self-test.",
       "features": [
         "Sitemap-driven product list, cross-checked against paginated store listings and product sub-sitemaps.",
         "Four comparison levels: feed to feed, feeds to rendered page, feeds to structured data, and everything to the markdown copy.",
@@ -4813,7 +4813,7 @@
         "verification",
         "updates"
       ],
-      "description": "Use when installing, authenticating, updating, or verifying a local AI agent CLI that works inside a project directory. Ends with a live model response, not an install command.",
+      "description": "Use when installing or verifying a local agent CLI. Covers authenticating and updating it, for a CLI that works inside a project directory. Ends with a live model response, not an install command.",
       "features": [
         "A pre-install check of the existing command, its version, the platform, and the project directory.",
         "A validated installer path: download, inspect, record a checksum, then run.",
@@ -4859,7 +4859,7 @@
         "bitwarden",
         "verification"
       ],
-      "description": "Use when a local inference server's API key must be rotated after exposure or on a maintenance schedule. Covers finding every consumer by hash, atomic updates, restarting only the server, and proving the new key works while the old one is rejected.",
+      "description": "Use when a local inference server's key must be rotated. Rotation follows exposure or a maintenance schedule. Covers finding every consumer by hash, atomic updates, restarting only the server, and proving the new key works while the old one is rejected.",
       "features": [
         "A discovery pass that lists the server's process arguments, config files, and environment variables without printing their values.",
         "A consumer map where each copy is identified by an 8-character SHA-256 prefix (sha8).",
@@ -4904,7 +4904,7 @@
         "local-llm",
         "troubleshooting"
       ],
-      "description": "Use when running, debugging, or retiring local LLM servers on a Mac. Covers port coexistence, single-model residency, auth and bind rules, memory-guard errors, client routing, and safe model decommissioning.",
+      "description": "Use when running, debugging, or retiring LLM servers. They run locally on a Mac. Covers port coexistence, single-model residency, auth and bind rules, memory-guard errors, client routing, and safe model decommissioning.",
       "features": [
         "Live residency checks: which ports are open, which models the server lists, and which model is actually loaded.",
         "A coexistence map covering shared memory, single-resident-model limits, and provider modes that change what gets loaded.",
@@ -4998,7 +4998,7 @@
         "memory",
         "telemetry"
       ],
-      "description": "Use when reading live CPU, GPU, memory, and thermal metrics from an Apple Silicon Mac. Covers the interactive view, one-shot JSON for telemetry, and export.",
+      "description": "Use when reading live Apple Silicon metrics. Covers CPU, GPU, memory and thermal data, the interactive view, one-shot JSON for telemetry, and export.",
       "features": [
         "Interactive full-screen view with a configurable refresh interval.",
         "Single-sample JSON output that exits after one reading, with no sudo needed in headless mode on recent macOS versions.",
@@ -5041,7 +5041,7 @@
         "setup",
         "troubleshooting"
       ],
-      "description": "Use when connecting an MCP server to a Hermes profile as a client. Covers pre-flight probes, the config block, the session boundary and smoke tests.",
+      "description": "Use when connecting an MCP server to a Hermes profile. The profile uses the server as a client. Covers pre-flight probes, the config block, the session boundary and smoke tests.",
       "features": [
         "Pre-flight probe of the health, the handshake and the tool list before any config change.",
         "Interactive add command, with the tool choices made by the operator.",
@@ -5085,7 +5085,7 @@
         "scraping",
         "authoring"
       ],
-      "description": "Use when building a small Python MCP server from a spec, with its tools wired to a fetch or scrape function. Covers the runtime, library version traps, FastMCP wiring and config.",
+      "description": "Use when building a small Python MCP server from a spec. Its tools are wired to a fetch or scrape function. Covers the runtime, library version traps, FastMCP wiring and config.",
       "features": [
         "Project layout for a single server with its scraper, requirements and environment example.",
         "Runtime check that the virtual environment really uses a current Python.",
@@ -5127,7 +5127,7 @@
         "health-check",
         "verification"
       ],
-      "description": "Use when probing a stdio MCP server that has no client set up. Covers the handshake, the tool list, evidence records and the silent-server case.",
+      "description": "Use when probing a stdio MCP server with no client. The server has no client set up yet. Covers the handshake, the tool list, evidence records and the silent-server case.",
       "features": [
         "Process-level probe that spawns the server with pipes on both sides.",
         "Three-message handshake: initialize, the initialized notification, and the tool list.",
@@ -5169,7 +5169,7 @@
         "ecommerce",
         "data-repair"
       ],
-      "description": "Use when making catalog, inventory, price, category or storefront-visibility changes through the Medusa v2 Admin API. Covers auth, relation expansion, read-back after every write, safe large reads and the variant-image link rules.",
+      "description": "Use when changing Medusa catalog or inventory data. Covers auth, relation expansion, read-back after every write, safe large reads and the variant-image link rules.",
       "features": [
         "An auth ladder that is walked in order before a write is called blocked.",
         "Read-back rules for every write, with the projection that actually shows the change.",
@@ -5213,7 +5213,7 @@
         "database",
         "medusa-cloud"
       ],
-      "description": "Use when a Medusa Cloud admin page crashes on orphaned link rows, a direct database repair is needed, or an external inventory or order system must sync into Medusa. Covers diagnosis, a fail-closed SQL repair with backups and tested sync patterns.",
+      "description": "Use when a Medusa admin page crashes on orphaned rows. Covers diagnosis, a fail-closed SQL repair with backups and tested sync patterns.",
       "features": [
         "Diagnosis that replays the failing page's own field list and looks for `null` entries.",
         "A read-only check of the link table through a direct database connection.",
@@ -5256,7 +5256,7 @@
         "harness",
         "monorepo"
       ],
-      "description": "Use when orchestrating or implementing Medusa.js commerce work with coding agents. Covers harness roles, official docs and agent plugins, a B2C-first monorepo boot, vendored compliance-module wiring and bank-gated payment sequencing.",
+      "description": "Use when orchestrating Medusa.js work with coding agents. Covers harness roles, official docs and agent plugins, a B2C-first monorepo boot, vendored compliance-module wiring and bank-gated payment sequencing.",
       "features": [
         "A role table for orchestrator, implementer, reviewer and grounding sources.",
         "Installation of the official Medusa agent plugins and documentation server, with a check that the session can use them.",
@@ -5301,7 +5301,7 @@
         "publishable-key",
         "verification"
       ],
-      "description": "Use when verifying a Medusa backend, storefront or product data over HTTP without admin keys or test passwords. Covers token classes, read-only probes, publishable-key discovery, product counts and deploy-SHA gates.",
+      "description": "Use when verifying a Medusa backend over HTTP. Covers token classes, read-only probes, publishable-key discovery, product counts and deploy-SHA gates, without admin keys or test passwords.",
       "features": [
         "A host check that matches the live commit before any data question.",
         "A token-class table that prevents using the wrong credential on the wrong route.",
@@ -5345,7 +5345,7 @@
         "storefront",
         "verification"
       ],
-      "description": "Use when Medusa Cloud CLI auth expires, a storefront or backend build must be triggered, or a deploy must be proven to run a specific commit. Covers auth refresh, build triggers, commit verification, tracking branches, variables, domains, backups, and triage.",
+      "description": "Use when Medusa Cloud auth expires or a build is needed. It also triggers storefront or backend builds and proves a deploy runs a specific commit. Covers auth refresh, build triggers, commit verification, tracking branches, variables, domains, backups, and triage.",
       "features": [
         "An auth gate that runs a real read after the identity check, because the identity check can pass with an expired token.",
         "Environment resolution by type and exact name, with preview environments kept separate from long-lived ones.",
@@ -5391,7 +5391,7 @@
         "verification",
         "no-guessing"
       ],
-      "description": "Use when writing or changing Medusa or Medusa Cloud code, API calls or CLI commands. Requires the installed version, a cited official page or the installed types for each version-sensitive shape, and a stop with one exact question when the docs are silent.",
+      "description": "Use when writing or changing Medusa code and API calls. Requires the installed version, a cited official page or the installed types for each version-sensitive shape, and a stop with one exact question when the docs are silent.",
       "features": [
         "A version check against the latest release and the project's pinned version, with a stated reason for any difference.",
         "A fixed source order for each shape: installed types, then the official page for that version, then a stop.",
@@ -5434,7 +5434,7 @@
         "workflow",
         "ecommerce"
       ],
-      "description": "Use when designing or building a bridge between Zoho Inventory and a Medusa v2 store, covering stock sync, webhook receipt, order push, reconciliation, locking and a wholesale customer import. Includes read-only stock digs against a Zoho dump.",
+      "description": "Use when bridging Zoho Inventory and a Medusa store. Includes read-only stock digs against a Zoho dump.",
       "features": [
         "An identity and authority table that says which system owns each field.",
         "Cross-system keys stored in Medusa metadata, with a re-run rule after catalog re-imports.",
@@ -5480,7 +5480,7 @@
         "graphiti",
         "neo4j"
       ],
-      "description": "Use when creating or restoring a portable snapshot of a Hermes memory stack, covering profile state, Hindsight native state, the Omega SQLite store, the Graphiti MCP configuration and source, and the Neo4j graph. Verify each layer before relying on the snapshot.",
+      "description": "Use when snapshotting a Hermes memory stack. It covers profile state, Hindsight native state, the Omega SQLite store, the Graphiti MCP configuration and source, and the Neo4j graph, and restoring is covered too. Verify each layer before relying on the snapshot.",
       "features": [
         "A profile-neutral layout, so the path does not depend on a user name or profile name.",
         "A capture list covering each memory layer, with a manifest that reports each layer's status.",
@@ -5522,7 +5522,7 @@
         "arbitration",
         "reconciliation"
       ],
-      "description": "Use when two agents' branches conflict in a git merge or rebase and neither agent should decide the outcome alone. A neutral third party reconciles the conflict.",
+      "description": "Use when two agents' branches conflict in a git merge. It also covers a rebase, where neither agent should decide the outcome alone. A neutral third party reconciles the conflict.",
       "features": [
         "A neutral reconciler assigned to a third worker, not to either side.",
         "A gathering step that collects both diffs and writes down each side's intent before any file changes.",
@@ -5567,7 +5567,7 @@
         "reversibility",
         "planning"
       ],
-      "description": "Use when planning, reviewing or proposing a code or configuration change. Choose the smallest verified, reversible change, label every claim by evidence, and stop at each external side effect for explicit approval.",
+      "description": "Use when planning or reviewing a code or config change. It also covers proposing such a change. Choose the smallest verified, reversible change, label every claim by evidence, and stop at each external side effect for explicit approval.",
       "features": [
         "An intent contract: purpose, method and an observable end state, stated before any change.",
         "Evidence labels (`[VERIFIED]`, `[INFERRED]`, `[UNKNOWN]`) applied to every material claim.",
@@ -5612,7 +5612,7 @@
         "apple-silicon",
         "vision"
       ],
-      "description": "Use when running or tuning local MLX inference servers on a Mac. Covers safe config edits, restarts, per-model settings, side-by-side variants, and single-GPU sharing.",
+      "description": "Use when running or tuning local MLX inference servers. They run on a Mac. Covers safe config edits, restarts, per-model settings, side-by-side variants, and single-GPU sharing.",
       "features": [
         "Settings split into server-wide, per-model, and read-only statistics files.",
         "A copy-edit-review-apply workflow for any change to a live server's configuration.",
@@ -5657,7 +5657,7 @@
         "hf-cli",
         "apple-silicon"
       ],
-      "description": "Use when preparing a Hugging Face model for MLX inference. Covers source verification, resumable download, shard repair, quantization choices, and benchmark gating.",
+      "description": "Use when preparing a Hugging Face model for MLX. It is for MLX inference. Covers source verification, resumable download, shard repair, quantization choices, and benchmark gating.",
       "features": [
         "Source verification that checks the exact repository, variant, and architecture before any download.",
         "A disk-space gate sized to the precision of the source.",
@@ -5702,7 +5702,7 @@
         "flood-control",
         "group"
       ],
-      "description": "Use when several agents share one Telegram group and their replies start a loop, a flood or a repeated message. Covers the causes, log checks, consolidated replies and fixes.",
+      "description": "Use when agents in one Telegram group start a loop. It also applies to floods and repeated messages. Covers the causes, log checks, consolidated replies and fixes.",
       "features": [
         "Classification into five loop types, each with its own check and fix.",
         "Log checks for recursion, flood control, polling and batching.",
@@ -5745,7 +5745,7 @@
         "config-change",
         "multi-host"
       ],
-      "description": "Use when working across several Macs that share one fleet. Covers host identity, live reachability probes, safe cross-host commands, service restarts, and fleet-wide config changes.",
+      "description": "Use when working across several Macs in one fleet. Covers host identity, live reachability probes, safe cross-host commands, service restarts, and fleet-wide config changes.",
       "features": [
         "Host identity rules that use full hostnames and a local inventory, not short labels.",
         "A reachability ladder: name resolution, then the network path, then the login, then the application port.",
@@ -5790,7 +5790,7 @@
         "automation",
         "integrations"
       ],
-      "description": "Use when connecting an agent to an n8n Cloud instance through its instance-level MCP server. Covers OAuth, tool whitelists, the fixture-proof gate and human approval for publishing or executing.",
+      "description": "Use when connecting an agent to n8n Cloud. The connection uses the instance-level MCP server. Covers OAuth, tool whitelists, the fixture-proof gate and human approval for publishing or executing.",
       "features": [
         "Prerequisites with the version gates the instance needs for each capability.",
         "OAuth wiring, with the token kept out of the configuration file and out of chat.",
@@ -5838,7 +5838,7 @@
         "session-management",
         "agent-cli"
       ],
-      "description": "Use when you need to create or reuse a titled agent session as a parked slot for later resume. Starts the slot without doing any work.",
+      "description": "Use when parking a titled agent session for later resume. Creates or reuses a titled session as a parked slot. Starts the slot without doing any work.",
       "features": [
         "A reuse-first lookup that finds an existing session with the exact title before creating one.",
         "A single create-or-reuse command with a fixed acknowledgement prompt and no tool use.",
@@ -5881,7 +5881,7 @@
         "citations",
         "official-sources"
       ],
-      "description": "Use when checking published claims against official sources, with verbatim quotes a script can re-fetch and a per-claim verdict.",
+      "description": "Use when checking claims against official sources. Uses verbatim quotes a script can re-fetch and a per-claim verdict.",
       "features": [
         "A claim parser that reads the claims from the repository file with code, not by retyping them.",
         "A verdict set of AGREES, DISAGREES and NO_SOURCE_FOUND, with a rule for each.",
@@ -5924,7 +5924,7 @@
         "huggingface",
         "model-install"
       ],
-      "description": "Use when adding, converting, registering, or recovering models on an oMLX server. Covers download, conversion, admin-API registration, sleep and wake recovery, and cache placement.",
+      "description": "Use when adding, converting, or recovering oMLX models. Registration runs on an oMLX server. Covers download, conversion, admin-API registration, sleep and wake recovery, and cache placement.",
       "features": [
         "Download of only the safetensors and configuration files a conversion needs.",
         "Conversion to MLX format with explicit quantization, plus a sanity generation before any settings change.",
@@ -5969,7 +5969,7 @@
         "promotion",
         "rollback"
       ],
-      "description": "Use when tuning, validating, promoting, or rolling back one model's settings in an oMLX server. Covers schema-first edits, read-back checks, promotion gates, and benchmarking.",
+      "description": "Use when tuning one oMLX model's settings. It also covers validating, promoting, and rolling back a change on an oMLX server. Covers schema-first edits, read-back checks, promotion gates, and benchmarking.",
       "features": [
         "Schema-first editing: confirm each key against the installed version's schema before writing it.",
         "Identity resolution that maps the runtime model ID to the key the settings file uses.",
@@ -6015,7 +6015,7 @@
         "assets",
         "layout"
       ],
-      "description": "Use when running or porting an exported design bundle (a zip of front-end source with a preview host) locally, or moving its scene into a storefront. Covers serving over HTTP, reconciling asset paths, porting to Next.js, and layering 3D content under page text.",
+      "description": "Use when running or porting an exported design bundle. A bundle is a zip of front-end source with a preview host. It may run locally or move its scene into a storefront. Covers serving over HTTP, reconciling asset paths, porting to Next.js, and layering 3D content under page text.",
       "features": [
         "A local server on a free port, never a file path.",
         "An asset reconciliation that compares each path in the code with the files on disk.",
@@ -6059,7 +6059,7 @@
         "routing",
         "research"
       ],
-      "description": "Use when live model benchmarks, pricing, provider latency or credit balance are needed from the OpenRouter MCP server. Covers tools, billing, routing suffixes, tokens and a REST fallback.",
+      "description": "Use when you need live model benchmarks or pricing. The data also covers provider latency and credit balance, from the OpenRouter MCP server. Covers tools, billing, routing suffixes, tokens and a REST fallback.",
       "features": [
         "Tool table that separates free lookups from the one billed chat tool.",
         "Benchmark filters for source, task type, arena and category.",
@@ -6102,7 +6102,7 @@
         "network-audit",
         "mcp"
       ],
-      "description": "Use when installing and auditing an open-source terminal fork (OpenWarp) that connects to a local model server on a Mac. Covers identifying the right binary in the bundle, configuring a local provider, auditing outbound connections, building from a pinned commit, and MCP configuration.",
+      "description": "Use when installing or auditing the OpenWarp fork. It is an open-source terminal fork that installs and connects to a local model server on a Mac. Covers identifying the right binary in the bundle, configuring a local provider, auditing outbound connections, building from a pinned commit, and MCP configuration.",
       "features": [
         "A binary check that names which executable is the terminal and which one is a command-line agent.",
         "A local-provider setup that points the app at an OpenAI-compatible local endpoint.",
@@ -6146,7 +6146,7 @@
         "stop-rules",
         "review"
       ],
-      "description": "Use when handing a long coding run, a design or copy task, or a pre-review pass to Claude Code or Claude apps running an Opus model. Covers the task brief, effort, stop rules, and checking results.",
+      "description": "Use when handing a long run to an Opus model. Applies to a long coding run, a design or copy task, or a pre-review pass in Claude Code or Claude apps. Covers the task brief, effort, stop rules, and checking results.",
       "features": [
         "A one-message task template: the task, a checkable done state, and the one or two real stops.",
         "An effort rule: set effort with the effort setting, not with prompt words.",
@@ -6193,7 +6193,7 @@
         "backups",
         "maintenance"
       ],
-      "description": "Use when running a scheduled overnight health and hygiene pass on a Hermes agent host. Covers gateway health, memory store hygiene, skills and cron checks, config review, tool dependencies, and backups.",
+      "description": "Use when running a scheduled overnight health pass. It is a health and hygiene pass on a Hermes agent host. Covers gateway health, memory store hygiene, skills and cron checks, config review, tool dependencies, and backups.",
       "features": [
         "A gateway check that reads the runtime's own status and doctor output.",
         "A memory-store check for size, exact duplicates, and stale directives, with a dry-run before any removal.",
@@ -6238,7 +6238,7 @@
         "baseline",
         "docs-only"
       ],
-      "description": "Use when measuring a live storefront's page speed with Lighthouse and shipping the baseline as a docs-only draft PR.",
+      "description": "Use when measuring a live storefront's page speed. Uses Lighthouse and ships the baseline as a docs-only draft PR.",
       "features": [
         "Round-robin runs across pages, with host load recorded before every run.",
         "Median run chosen by LCP, with its phase breakdown kept whole.",
@@ -6284,7 +6284,7 @@
         "holo",
         "research"
       ],
-      "description": "Use when running deep-research turns in the Perplexity desktop app through a local vision-based desktop agent (HoloDesktop CLI) instead of the web.",
+      "description": "Use when running deep research in Perplexity desktop. It runs through a local vision-based desktop agent (HoloDesktop CLI) instead of the web.",
       "features": [
         "Prompt templates for a repository review, a product comparison and a follow-up turn.",
         "A mode check that confirms the app is in its search and research mode, not the agentic mode that costs more.",
@@ -6326,7 +6326,7 @@
         "tui",
         "desktop"
       ],
-      "description": "Use when a Hermes user wants an animated terminal or desktop mascot. Covers browsing, installing, selecting, sizing and diagnosing pets.",
+      "description": "Use when a Hermes user wants an animated mascot. It can run in the terminal or on the desktop. Covers browsing, installing, selecting, sizing and diagnosing pets.",
       "features": [
         "Gallery search with a substring filter.",
         "Install with an option that makes the pet active at once.",
@@ -6369,7 +6369,7 @@
         "hash",
         "git"
       ],
-      "description": "Use when verifying a pull request's head files (hashes, sizes, existence, branch state) without a clone, or running a repository's acceptance script against a PR head read-only.",
+      "description": "Use when verifying a pull request's head files. Checks hashes, sizes, existence and branch state without a clone, or runs a repository's acceptance script against a PR head read-only.",
       "features": [
         "A head-verification recipe that needs no clone: resolve the branch, the blob SHA, decode the blob, and hash it.",
         "A full-clone recipe for scripts that need a working tree, pinned to the head branch and deleted afterwards.",
@@ -6411,7 +6411,7 @@
         "evidence",
         "preview-environments"
       ],
-      "description": "Use when running a QA matrix against a preview storefront build. Playwright runner, JSON evidence, generated report.",
+      "description": "Use when running a QA matrix on a preview storefront. Playwright runner, JSON evidence, generated report.",
       "features": [
         "One JSON result file as the single source of truth, with Markdown and HTML indexes generated from it.",
         "A state-by-route matrix that records HTTP status, redirect target, final path, surface, price-string count and product-link count per cell.",
@@ -6504,7 +6504,7 @@
         "wholesale",
         "citations"
       ],
-      "description": "Use when writing or improving product listing copy from specs, competitor pages or manufacturer and distributor sources, including batches of wholesale descriptions from a CSV. Every claim is cited, a two-pass voice audit runs, and facts that cannot be sourced become open questions.",
+      "description": "Use when writing product descriptions from sources. Every claim is cited, a two-pass voice audit runs, and facts that cannot be sourced become open questions.",
       "features": [
         "Create and optimise modes for common marketplace and storefront formats, with each format's length limits.",
         "Keyword scoring from competitor titles and bullets, with tiers for title, bullets, description and backend terms.",
@@ -6590,7 +6590,7 @@
         "deduplication",
         "verification"
       ],
-      "description": "Use when building a deduplicated, verified list of business prospects from public registries and map data, delivered as a CSV with a source link on every row.",
+      "description": "Use when building a verified list of business prospects. It is deduplicated, drawn from public registries and map data, and delivered as a CSV with a source link on every row.",
       "features": [
         "Source priority: official registry first, open-data portal second, map data as enrichment.",
         "A row-resolving source link on every row, checked against the live source.",
@@ -6635,7 +6635,7 @@
         "read-only",
         "audit"
       ],
-      "description": "Use when assembling facts from files, git history or running processes without changing the trees under study. Search in a fixed order, record metadata for every hit, mark what could not be proven as unknown, and keep secrets out of the report.",
+      "description": "Use when collecting facts without changing anything. It covers files, git history and running processes. Search in a fixed order, record metadata for every hit, mark what could not be proven as unknown, and keep secrets out of the report.",
       "features": [
         "A fixed search order for named files, with exact-basename matching after a fast index search.",
         "A per-file metadata record: absolute path, size, modification time, hash, first line, and git status.",
@@ -6680,7 +6680,7 @@
         "regulated",
         "marketing"
       ],
-      "description": "Use when drafting buyer-facing content for a regulated online store (hemp-derived products, alcohol, prescription-adjacent, gambling, supplements or firearms) from its live catalog and a few fetched pages. Output is one draft pull request, never merged, with a compliance lint that must report zero hits.",
+      "description": "Use when drafting copy for a regulated online store. Output is one draft pull request, never merged, with a compliance lint that must report zero hits.",
       "features": [
         "Three pre-flight reads that gate every draft: the live host, the store's claim rules, and any standing prohibition on promoting the product class.",
         "Observed search queries only. Each target query records where and when it was observed.",
@@ -6725,7 +6725,7 @@
         "medusa",
         "regulated"
       ],
-      "description": "Use when adding or extending state, age or license gates on a regulated online store, or wiring a hosted age-verification provider into checkout. Covers one legal blocklist, fail-closed checks, cache-stable pages, a dark-launch arming sequence and verification by hash.",
+      "description": "Use when adding state, age or license gates to a store. Covers one legal blocklist, fail-closed checks, cache-stable pages, a dark-launch arming sequence and verification by hash.",
       "features": [
         "Three separate gate axes, each with its own product field, so a rule for one axis never silently changes another.",
         "A single blocklist file, mirrored byte for byte to the storefront and checked by hash.",
@@ -6769,7 +6769,7 @@
         "catalog",
         "batch-verification"
       ],
-      "description": "Use when finding, verifying or binding certificates of analysis (COAs) and lab-test reports for regulated products such as supplements, cosmetics, food or hemp-derived goods. Covers source discovery, identity checks against the document text, status codes, wall hosts and a metadata bind with read-back proof.",
+      "description": "Use when verifying certificates of analysis (COAs). Covers source discovery, identity checks against the document text, status codes, wall hosts and a metadata bind with read-back proof.",
       "features": [
         "Pre-search triage that marks categories with no public COA route before any search budget is spent.",
         "A verify-then-bind ladder: live response, file signature, document text, then identity against the product.",
@@ -6811,7 +6811,7 @@
         "github",
         "reliability"
       ],
-      "description": "Use when backing up a git repository or worktree before risky work. Makes tarballs with checksums, runs a secret scan, pushes to a private backup remote and verifies each ref.",
+      "description": "Use when backing up a git repository before risky work. Makes tarballs with checksums, runs a secret scan, pushes to a private backup remote and verifies each ref.",
       "features": [
         "A full tarball of each working tree, including its `.git` directory.",
         "One checksum file beside the tarballs.",
@@ -6856,7 +6856,7 @@
         "repository",
         "stewardship"
       ],
-      "description": "Use when publishing code or documents to a public GitHub account with no personal identifiers, machine identity, network details or secrets, and when maintaining that public repository afterwards.",
+      "description": "Use when publishing code or docs publicly on GitHub. It must carry no personal identifiers, machine identity, network details or secrets. Covers maintaining that public repository afterwards.",
       "features": [
         "A neutral build folder, so no identity-bearing tree is used as the origin of the artifact.",
         "Sanitized-by-construction defaults: relative paths, environment variables for hosts, and generic names for group identifiers.",
@@ -6902,7 +6902,7 @@
         "git",
         "reconciliation"
       ],
-      "description": "Use when repository docs or remote git state mislead the agents and teammates who rely on them. Keeps one current-truth document accurate and reconciles remote state with local history.",
+      "description": "Use when repo docs or remote git state mislead agents. Keeps one current-truth document accurate and reconciles remote state with local history.",
       "features": [
         "One short current-truth document with the live hosts, a retired-host list and a verification recipe.",
         "Warning banners on superseded documents, and a pointer at the top of the README.",
@@ -6946,7 +6946,7 @@
         "medusa",
         "ecommerce"
       ],
-      "description": "Use when building a research-use-only B2C storefront that sells laboratory materials under a fixed copy contract, with a quote desk, a bench for reserving items and lot paper for each product. Covers copy rules, visual proof and the dark-not-delete rule for compliance changes.",
+      "description": "Use when building a research-use-only storefront. Covers copy rules, visual proof and the dark-not-delete rule for compliance changes.",
       "features": [
         "A copy contract with allowed claim types, forbidden claim types and the exact calls to action.",
         "Commerce fallbacks: a fixed catalog, a session-stored bench, and a checkout that is a quote desk until payment is ready.",
@@ -6989,7 +6989,7 @@
         "production",
         "upstream"
       ],
-      "description": "Use when preparing a pull request or commit that touches production or upstream code. Pause after the first working draft, verify the external symbols, trim the scope, then ship.",
+      "description": "Use when preparing a commit or PR for production code. Pause after the first working draft, verify the external symbols, trim the scope, then ship.",
       "features": [
         "A header and dependency check for every new external symbol.",
         "A scope trim, with three questions for each new line.",
@@ -7032,7 +7032,7 @@
         "live-checks",
         "honesty"
       ],
-      "description": "Use when telling the operator that something will happen, is done, is live, or was created. Run the check in the same turn, quote its output, and correct any earlier claim the check does not support.",
+      "description": "Use when telling the operator something is done or live. It applies to anything that will happen, is done, is live, or was created. Run the check in the same turn, quote its output, and correct any earlier claim the check does not support.",
       "features": [
         "A promise ledger: each promise has its outcome check, a time estimate, and the cards that carry it.",
         "A rule that a check must test the last clause of the promise, not an earlier step.",
@@ -7076,7 +7076,7 @@
         "plaintext-removal",
         "operator-approval"
       ],
-      "description": "Use when auditing plaintext secrets on a host and migrating them to a shared Bitwarden Secrets Manager project. Covers inventory without reading values, cross-referencing the store, updating consumers, read-only surface checks, and shredding only after operator approval.",
+      "description": "Use when auditing plaintext secrets on a host. It also migrates them to a shared Bitwarden Secrets Manager project. Covers inventory without reading values, cross-referencing the store, updating consumers, read-only surface checks, and shredding only after operator approval.",
       "features": [
         "A file inventory that finds secret-shaped files and enumerates environment-file key names without reading their values.",
         "A cross-reference of the store, so each plaintext value is matched to an existing entry or a new one.",
@@ -7122,7 +7122,7 @@
         "review",
         "probes"
       ],
-      "description": "Use when a change touches a fail-closed compliance gate, such as a restriction at checkout, an age check, or a blocklist, and the question is whether the gate still blocks. Covers a read-only review, transpiled probes, data reconciliation, surface scans, and a verdict file.",
+      "description": "Use when a change touches a compliance gate. The question is whether a fail-closed gate still blocks, such as a restriction at checkout, an age check, or a blocklist. Covers a read-only review, transpiled probes, data reconciliation, surface scans, and a verdict file.",
       "features": [
         "A static read of each enforcement point and each helper it calls, pinned to a commit.",
         "A transpile of the gate's modules into a scratch folder, so probes run without touching live systems.",
@@ -7168,7 +7168,7 @@
         "self-hosted",
         "private-network"
       ],
-      "description": "Use when scraping, searching or crawling through a self-hosted Firecrawl server on a private network. Covers the health check, page scrape, search, crawl jobs and safe-use rules.",
+      "description": "Use when scraping through a self-hosted Firecrawl server. The server runs on a private network, and search and crawl jobs are also covered. Covers the health check, page scrape, search, crawl jobs and safe-use rules.",
       "features": [
         "Health check that tells a down server from a failed request.",
         "Single-page scrape returning markdown, with the other output formats named.",
@@ -7210,7 +7210,7 @@
         "coverage",
         "typing"
       ],
-      "description": "Use when auditing or fixing a GitHub repository against the Slophammer standard for AI-generated code quality, testing gaps, dependency boundaries, complexity, type safety and coverage gates.",
+      "description": "Use when auditing a repo for AI code quality. Covers auditing or fixing a GitHub repository against the Slophammer standard for testing gaps, dependency boundaries, complexity, type safety and coverage gates.",
       "features": [
         "Language detection (Go, TypeScript, Rust, Python) with the matching checker.",
         "A fetch of the upstream agent entrypoint, pinned to a commit, at the start of every audit.",
@@ -7252,7 +7252,7 @@
         "dry-run",
         "provenance"
       ],
-      "description": "Use when asked what an installed tool does, where it writes, or how to remove it. Read the upstream installer source first, list the install footprint and its reseed sources, then ship a dry-run removal that backs up before it deletes.",
+      "description": "Use when asked how to remove an installed tool. It also covers what the tool does and where it writes. Read the upstream installer source first, list the install footprint and its reseed sources, then ship a dry-run removal that backs up before it deletes.",
       "features": [
         "A search for the installer in a public repository, a package manifest, a service definition or the vendor's uninstall documentation.",
         "A table that maps each installer action to the inverse action that undoes it.",
@@ -7295,7 +7295,7 @@
         "apple-silicon",
         "local-models"
       ],
-      "description": "Use when memory or disk pressure on a Mac comes from Spotlight indexing or from two model servers sharing one memory pool. Covers indexing toggles, single-server rules, and diagnosis.",
+      "description": "Use when Spotlight or model servers strain memory. The memory or disk pressure can come from Spotlight indexing or from two model servers sharing one memory pool. Covers indexing toggles, single-server rules, and diagnosis.",
       "features": [
         "Commands to list, pause, resume, and rebuild Spotlight indexing per volume.",
         "A diagnosis order that separates indexing pressure from model-server pressure.",
@@ -7336,7 +7336,7 @@
         "messaging",
         "discipline"
       ],
-      "description": "Use when several agents share one group chat and each message must name the agent it is for. Covers the addressing prefix, reply routing, and when to stay silent or ask a question.",
+      "description": "Use when several agents share one group chat. Each message must name the agent it is for. Covers the addressing prefix, reply routing, and when to stay silent or ask a question.",
       "features": [
         "A prefix rule: the first characters of every group message are the address prefix, followed by full usernames.",
         "An addressing check that every agent runs before it replies.",
@@ -7381,7 +7381,7 @@
         "storefront",
         "audit"
       ],
-      "description": "Use when auditing storefront WCAG 2.2 AA accessibility with axe-core across several pages and viewports. Read-only, per-rule CSV, draft PR.",
+      "description": "Use when auditing storefront WCAG 2.2 AA accessibility. Read-only, per-rule CSV, draft PR.",
       "features": [
         "axe-core run on the live document with the WCAG 2.0, 2.1 and 2.2 AA tag set plus best-practice rules, keeping violations and incomplete results.",
         "Separate tables for violations, incomplete results (\"needs review\") and per-run summaries.",
@@ -7426,7 +7426,7 @@
         "named-rules",
         "code-review"
       ],
-      "description": "Use when auditing a storefront's source for a pattern across its apps. Read-only, per-row CSV of file:line findings, report, draft PR.",
+      "description": "Use when auditing a storefront's source for a pattern. Read-only, per-row CSV of file:line findings, report, draft PR.",
       "features": [
         "One regex per pattern, applied to a stated file glob, with the regex recorded as part of the audit.",
         "Named codes in the form `<CATEGORY>_<DEFECT>`, so each finding is countable.",
@@ -7471,7 +7471,7 @@
         "audit",
         "wording"
       ],
-      "description": "Use when running a read-only wording-compliance sweep of a live storefront. Crawls every public page with GET requests, flags copy that breaks research-use-only or similar rules, and produces per-hit evidence, a rewrite for each flag and a report generated from the data.",
+      "description": "Use when running a read-only wording compliance sweep. Crawls every public page with GET requests, flags copy that breaks research-use-only or similar rules, and produces per-hit evidence, a rewrite for each flag and a report generated from the data.",
       "features": [
         "Sitemap-driven crawl with a no-redirect opener, so gates appear as redirects rather than being followed.",
         "Text extraction limited to visible copy, image alternatives and structured-data name and description fields.",
@@ -7514,7 +7514,7 @@
         "drafts",
         "draft-pr"
       ],
-      "description": "Use when drafting storefront copy as files for review (category intros, product fields, recovery screens, lifecycle messages, or a copy inventory). Every claim cites a live page or source file.",
+      "description": "Use when drafting storefront copy as files for review. Every claim cites a live page or source file.",
       "features": [
         "One method for five job types, each with a Markdown or CSV format that a checker can parse.",
         "A citation rule: every factual sentence has an excerpt, a URL or file path, and a verbatim quote.",
@@ -7559,7 +7559,7 @@
         "publish",
         "production"
       ],
-      "description": "Use when publishing a Medusa storefront and backend release to a hosted cloud environment. Pins the approved commit, proves the live build, and runs layered checks before calling the release live.",
+      "description": "Use when publishing a Medusa storefront or backend. Pins the approved commit, proves the live build, and runs layered checks before calling the release live.",
       "features": [
         "Release metadata recorded before any platform call.",
         "A pinned merge commit, so the approval attaches to one commit.",
@@ -7604,7 +7604,7 @@
         "animation",
         "preview"
       ],
-      "description": "Use when accepting storefront visual changes such as fixed-canvas heroes over CSS backdrops, scroll-driven entrances, product grids and commit-pinned preview evidence.",
+      "description": "Use when accepting storefront visual changes. Covers fixed-canvas heroes over CSS backdrops, scroll-driven entrances, product grids and commit-pinned preview evidence.",
       "features": [
         "A design rule set for storefront surfaces, with the reason for each rule.",
         "An acceptance workflow that requires a real render with real catalog data.",
@@ -7695,7 +7695,7 @@
         "offline",
         "fidelity"
       ],
-      "description": "Use when distilling a large official documentation corpus into compact offline reference files that keep exact endpoints, headers, signatures, imports, paths and commands. Search first, read bounded regions, and verify every file and the final response.",
+      "description": "Use when distilling large official docs. The references keep exact endpoints, headers, signatures, imports, paths and commands. Search first, read bounded regions, and verify every file and the final response.",
       "features": [
         "A manifest step that turns the request into checkable constraints before any writing.",
         "Search-first reading, with bounded regions instead of whole-file loads.",
@@ -7738,7 +7738,7 @@
         "reactions",
         "configuration"
       ],
-      "description": "Use when setting up or troubleshooting large-file handling and reactions for a Hermes Telegram bot, including the optional local Bot API. Covers the limits, the config keys and the agent behavior rules.",
+      "description": "Use when a Hermes Telegram bot needs large-file handling. It covers reactions and the optional local Bot API, including troubleshooting. Covers the limits, the config keys and the agent behavior rules.",
       "features": [
         "A table that separates the person's subscription from the bot's limits.",
         "A map of what a local Bot API server unlocks, and what it does not.",
@@ -7780,7 +7780,7 @@
         "repos",
         "debugging"
       ],
-      "description": "Use when terminal commands fail after a directory was removed, or before any change to a repo you may not be in. Covers stale working directories, retry loops and preflight checks.",
+      "description": "Use when terminal commands fail on a removed directory. It also applies before any change to a repo you may not be in. Covers stale working directories, retry loops and preflight checks.",
       "features": [
         "Symptom check that separates a stale working directory from a real command failure.",
         "Retry-loop rule that changes approach after two identical failures.",
@@ -7825,7 +7825,7 @@
         "mcp",
         "api-key"
       ],
-      "description": "Use when connecting TinyFish search or fetch to installed coding agents. Covers key handling, unattended connection, the doctor check and a search-and-fetch proof.",
+      "description": "Use when connecting TinyFish search to coding agents. It applies to search and fetch. Covers key handling, unattended connection, the doctor check and a search-and-fetch proof.",
       "features": [
         "Key handling that keeps the value out of output, and clears it when the run ends.",
         "Unattended connection that skips the browser sign-in step and reports which agents need it.",
@@ -7917,7 +7917,7 @@
         "graph",
         "reporting"
       ],
-      "description": "Use when a Hermes install runs three long-term memory stores bridged together, a primary fact store, a local semantic index and a temporal graph. Route each read and write to the right store, keep the stores consistent with an idempotent bridge, and report partial writes honestly.",
+      "description": "Use when Hermes runs three bridged memory stores. They are a primary fact store, a local semantic index and a temporal graph. Route each read and write to the right store, keep the stores consistent with an idempotent bridge, and report partial writes honestly.",
       "features": [
         "A routing table from question shape to store.",
         "A write rule: write once to the primary store and let the bridge fan out, with manual writes only for typed events and superseding facts.",
@@ -7960,7 +7960,7 @@
         "storefront",
         "review"
       ],
-      "description": "Use when a storefront page gains or changes a filter, selector, navigation item, list or control. Match the sibling controls on the same page.",
+      "description": "Use when a storefront page adds or changes a control. Match the sibling controls on the same page.",
       "features": [
         "A shared-grammar checklist: one family per role, matched size and weight, one casing, one active-state treatment, icons sized to the text.",
         "A duplicate-input rule for facts collected twice on one view.",
@@ -8001,7 +8001,7 @@
         "analytics",
         "marketing"
       ],
-      "description": "Use when publishing, drafting or scheduling any outbound storefront link. Checks UTM parameters against the team's naming convention and blocks links that fail.",
+      "description": "Use when publishing any outbound storefront link. Checks UTM parameters against the team's naming convention and blocks links that fail.",
       "features": [
         "A fixed set of required and optional parameters, with value rules.",
         "A closed set of medium values.",
@@ -8043,7 +8043,7 @@
         "corporate-parent",
         "due-diligence"
       ],
-      "description": "Use when naming a vendor, brand, sender, corporate parent or product family in a reply, a task record, a pull request or a message. Verify the corporate relationship with one cheap probe first, and do not call a sender suspicious from a pattern match alone.",
+      "description": "Use when naming a vendor, brand or sender in a reply. It also covers a corporate parent, a product family, a task record, a pull request or a message. Verify the corporate relationship with one cheap probe first, and do not call a sender suspicious from a pattern match alone.",
       "features": [
         "A rule that turns each identity claim into a probe with a quoted result.",
         "A ranked list of probes: an official newsroom or About page, a web search on the footer text, and the link the user supplied.",
@@ -8132,7 +8132,7 @@
         "fallback",
         "troubleshooting"
       ],
-      "description": "Use when Hermes must use xAI Grok through a subscription login instead of an API key. Covers the browser login, model selection, fallback order and login troubleshooting.",
+      "description": "Use when Hermes must use xAI Grok by subscription login. It is used instead of an API key. Covers the browser login, model selection, fallback order and login troubleshooting.",
       "features": [
         "Browser login with the provider identifier and its aliases.",
         "Login over a remote session, using a local browser and a forwarded callback port.",

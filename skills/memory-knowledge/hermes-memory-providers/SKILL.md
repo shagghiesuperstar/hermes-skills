@@ -1,6 +1,6 @@
 ---
 name: hermes-memory-providers
-description: Use when installing, configuring, verifying or debugging Hermes memory providers, meaning Hindsight in cloud or local mode, Omega, Graphiti, or a bridge that fans out across them. Covers the setup wizard, key slots, per-profile isolation, retain and recall proof, and a triage ladder for failed writes.
+description: Use when installing or debugging Hermes memory providers. They include Hindsight, Omega, Graphiti, or a bridge across them. Covers the setup wizard, key slots, per-profile isolation, retain and recall proof, and a triage ladder for failed writes.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

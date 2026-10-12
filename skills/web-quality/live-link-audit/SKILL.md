@@ -1,6 +1,6 @@
 ---
 name: live-link-audit
-description: Use when auditing a live storefront for broken links, redirect chains, sitemap errors and mixed http. Read-only crawl, per-row CSV, draft PR.
+description: Use when auditing a live storefront for broken links. Read-only crawl, per-row CSV, draft PR.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: medusa-cloud-ops
-description: Use when Medusa Cloud CLI auth expires, a storefront or backend build must be triggered, or a deploy must be proven to run a specific commit. Covers auth refresh, build triggers, commit verification, tracking branches, variables, domains, backups, and triage.
+description: Use when Medusa Cloud auth expires or a build is needed. It also triggers storefront or backend builds and proves a deploy runs a specific commit. Covers auth refresh, build triggers, commit verification, tracking branches, variables, domains, backups, and triage.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

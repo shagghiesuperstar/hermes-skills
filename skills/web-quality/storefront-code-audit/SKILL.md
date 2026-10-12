@@ -1,6 +1,6 @@
 ---
 name: storefront-code-audit
-description: Use when auditing a storefront's source for a pattern across its apps. Read-only, per-row CSV of file:line findings, report, draft PR.
+description: Use when auditing a storefront's source for a pattern. Read-only, per-row CSV of file:line findings, report, draft PR.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

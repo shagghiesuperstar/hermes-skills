@@ -1,6 +1,6 @@
 ---
 name: execution-discipline
-description: Use when an agent loops in analysis, narrates progress without acting, or must stop a running loop. Set read limits, pair every progress claim with a change, and halt processes so they stay halted.
+description: Use when an agent loops or narrates without acting. It also applies when a running loop must stop. Set read limits, pair every progress claim with a change, and halt processes so they stay halted.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

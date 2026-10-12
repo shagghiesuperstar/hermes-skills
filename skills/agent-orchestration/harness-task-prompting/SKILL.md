@@ -1,6 +1,6 @@
 ---
 name: harness-task-prompting
-description: Use when writing any work order or task card for an agent or a coding harness. Sets the card shape, pinned model, done criteria, and review handoff.
+description: Use when writing a work order or task card for an agent. Applies to coding harnesses too. Sets the card shape, pinned model, done criteria, and review handoff.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

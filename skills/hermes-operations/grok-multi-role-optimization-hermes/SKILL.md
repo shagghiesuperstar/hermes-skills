@@ -1,6 +1,6 @@
 ---
 name: grok-multi-role-optimization-hermes
-description: Use when setting up Hermes with several xAI Grok roles over OAuth. Covers role-to-model mapping, delegation limits, memory settings and profiles.
+description: Use when setting up Hermes with several Grok roles. The roles use xAI OAuth. Covers role-to-model mapping, delegation limits, memory settings and profiles.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

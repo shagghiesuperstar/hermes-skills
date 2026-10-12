@@ -1,6 +1,6 @@
 ---
 name: bitwarden-secrets-manager-hermes
-description: Use when a Hermes host reads or writes credentials through the Bitwarden Secrets Manager CLI. Covers machine accounts, scoped read grants, no-echo handling, upsert and verification, and disk-key consolidation.
+description: Use when a Hermes host reads or writes Bitwarden secrets. It uses the Bitwarden Secrets Manager CLI for credentials. Covers machine accounts, scoped read grants, no-echo handling, upsert and verification, and disk-key consolidation.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

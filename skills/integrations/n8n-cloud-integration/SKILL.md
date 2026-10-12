@@ -1,6 +1,6 @@
 ---
 name: n8n-cloud-integration
-description: Use when connecting an agent to an n8n Cloud instance through its instance-level MCP server. Covers OAuth, tool whitelists, the fixture-proof gate and human approval for publishing or executing.
+description: Use when connecting an agent to n8n Cloud. The connection uses the instance-level MCP server. Covers OAuth, tool whitelists, the fixture-proof gate and human approval for publishing or executing.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: medusa-zoho-inventory-bridge
-description: Use when designing or building a bridge between Zoho Inventory and a Medusa v2 store, covering stock sync, webhook receipt, order push, reconciliation, locking and a wholesale customer import. Includes read-only stock digs against a Zoho dump.
+description: Use when bridging Zoho Inventory and a Medusa store. Includes read-only stock digs against a Zoho dump.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

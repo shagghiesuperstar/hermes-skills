@@ -1,6 +1,6 @@
 ---
 name: ai-search-question-bank
-description: Use when building a sourced question bank of buyer questions for AI-search and answer-engine coverage, mapped to a site's live pages.
+description: Use when building a sourced question bank for AI search. Covers buyer questions for answer-engine coverage, mapped to a site's live pages.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

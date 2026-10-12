@@ -1,6 +1,6 @@
 ---
 name: commerce-media-pipeline
-description: Use when batch-processing storefront product photos or 3D assets, pruning a shoot folder to hero shots, or watching a shared photo folder, with a visual operator gate before anything reaches the catalog.
+description: Use when batch-processing storefront product photos. Covers 3D assets, pruning a shoot folder to hero shots, watching a shared photo folder, and a visual operator gate before anything reaches the catalog.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

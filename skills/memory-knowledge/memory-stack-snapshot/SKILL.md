@@ -1,6 +1,6 @@
 ---
 name: memory-stack-snapshot
-description: Use when creating or restoring a portable snapshot of a Hermes memory stack, covering profile state, Hindsight native state, the Omega SQLite store, the Graphiti MCP configuration and source, and the Neo4j graph. Verify each layer before relying on the snapshot.
+description: Use when snapshotting a Hermes memory stack. It covers profile state, Hindsight native state, the Omega SQLite store, the Graphiti MCP configuration and source, and the Neo4j graph, and restoring is covered too. Verify each layer before relying on the snapshot.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

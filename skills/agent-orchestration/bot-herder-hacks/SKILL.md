@@ -1,6 +1,6 @@
 ---
 name: bot-herder-hacks
-description: Use when creating, arming, tightening, or retiring a bot in a multi-bot Hermes or Grok fleet. Sets outcome, instruction, and approval rules.
+description: Use when creating, arming, tightening, or retiring a bot. Covers a multi-bot Hermes or Grok fleet. Sets outcome, instruction, and approval rules.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: ai-answer-presence-audit
-description: Use when auditing whether a brand is cited in search results and AI answers for real buyer questions. Records who is cited, labels every surface that could not be observed as UNKNOWN, and delivers a matrix, raw observations and a report as a draft pull request.
+description: Use when auditing whether AI answers cite a brand. Records who is cited, labels every surface that could not be observed as UNKNOWN, and delivers a matrix, raw observations and a report as a draft pull request.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

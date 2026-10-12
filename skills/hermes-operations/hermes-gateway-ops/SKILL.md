@@ -1,6 +1,6 @@
 ---
 name: hermes-gateway-ops
-description: Use when a Hermes messaging gateway stops responding or Telegram polling fails. Covers service identity, logs, restart discipline, failure signatures and health checks.
+description: Use when a Hermes gateway stops responding. It also applies when Telegram polling fails. Covers service identity, logs, restart discipline, failure signatures and health checks.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

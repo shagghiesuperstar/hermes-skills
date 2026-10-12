@@ -1,6 +1,6 @@
 ---
 name: medusa-docs-first
-description: Use when writing or changing Medusa or Medusa Cloud code, API calls or CLI commands. Requires the installed version, a cited official page or the installed types for each version-sensitive shape, and a stop with one exact question when the docs are silent.
+description: Use when writing or changing Medusa code and API calls. Requires the installed version, a cited official page or the installed types for each version-sensitive shape, and a stop with one exact question when the docs are silent.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

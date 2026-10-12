@@ -1,6 +1,6 @@
 ---
 name: preview-env-qa
-description: Use when running a QA matrix against a preview storefront build. Playwright runner, JSON evidence, generated report.
+description: Use when running a QA matrix on a preview storefront. Playwright runner, JSON evidence, generated report.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

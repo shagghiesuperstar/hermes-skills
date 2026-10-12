@@ -1,6 +1,6 @@
 ---
 name: competitor-site-teardown
-description: Use when comparing competitor storefronts with a cited feature matrix. Every cell cites a fetched URL or says UNKNOWN; output is a draft PR.
+description: Use when comparing competitor storefronts by feature. Every cell cites a fetched URL or says UNKNOWN; output is a draft PR.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

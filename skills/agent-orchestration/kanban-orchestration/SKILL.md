@@ -1,6 +1,6 @@
 ---
 name: kanban-orchestration
-description: Use when one goal is split across several agent workers on a shared kanban board. Covers card contracts, dependency links, dispatch checks, review gates, blocker routing, and recovery after crashes or timeouts.
+description: Use when several agent workers share one kanban goal. Covers card contracts, dependency links, dispatch checks, review gates, blocker routing, and recovery after crashes or timeouts.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

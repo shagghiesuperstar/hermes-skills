@@ -1,6 +1,6 @@
 ---
 name: security-gate-review
-description: Use when a change touches a fail-closed compliance gate, such as a restriction at checkout, an age check, or a blocklist, and the question is whether the gate still blocks. Covers a read-only review, transpiled probes, data reconciliation, surface scans, and a verdict file.
+description: Use when a change touches a compliance gate. The question is whether a fail-closed gate still blocks, such as a restriction at checkout, an age check, or a blocklist. Covers a read-only review, transpiled probes, data reconciliation, surface scans, and a verdict file.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

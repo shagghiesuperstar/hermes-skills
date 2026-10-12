@@ -1,6 +1,6 @@
 ---
 name: hindsight
-description: Use when storing or retrieving long-term agent memories through the Hindsight memory system, diagnosing its daemon or retain failures, choosing its cloud or local mode, or running a bridge that reads Hindsight and mirrors facts to another store.
+description: Use when storing or retrieving long-term agent memories. It also covers the Hindsight daemon, retain failures, cloud or local mode, and bridges to another store.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: ecommerce-readiness-rollout
-description: Use when turning lessons from past e-commerce launches into one reusable readiness checker that runs against any storefront URL. Covers the lesson record format, portable checks, consolidation timing and checking a new site against known incidents.
+description: Use when building a storefront readiness checker. Covers the lesson record format, portable checks, consolidation timing and checking a new site against known incidents.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

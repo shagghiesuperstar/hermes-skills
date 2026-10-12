@@ -1,6 +1,6 @@
 ---
 name: named-session-parking
-description: Use when you need to create or reuse a titled agent session as a parked slot for later resume. Starts the slot without doing any work.
+description: Use when parking a titled agent session for later resume. Creates or reuses a titled session as a parked slot. Starts the slot without doing any work.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: independent-static-review
-description: Use when briefing a second, read-only session to audit a composed code path, such as checkout, payment, or access gates, for defects that no single diff shows.
+description: Use when briefing a read-only reviewer on a code path. Covers a second, read-only session that audits a composed path, such as checkout, payment, or access gates, for defects that no single diff shows.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: hermes-upstream-contribution
-description: Use when filing an issue or pull request to the Hermes upstream project. Covers ruling out local causes, deduplication, issue-first scope, small diffs and evidence.
+description: Use when filing an issue or pull request upstream. The target is the Hermes upstream project. Covers ruling out local causes, deduplication, issue-first scope, small diffs and evidence.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

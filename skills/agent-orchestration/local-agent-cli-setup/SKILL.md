@@ -1,6 +1,6 @@
 ---
 name: local-agent-cli-setup
-description: Use when installing, authenticating, updating, or verifying a local AI agent CLI that works inside a project directory. Ends with a live model response, not an install command.
+description: Use when installing or verifying a local agent CLI. Covers authenticating and updating it, for a CLI that works inside a project directory. Ends with a live model response, not an install command.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

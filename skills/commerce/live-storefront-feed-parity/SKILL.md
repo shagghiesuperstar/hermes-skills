@@ -1,6 +1,6 @@
 ---
 name: live-storefront-feed-parity
-description: Use when checking whether a live storefront's product feeds, product pages, structured data and markdown copies agree field by field for every SKU, and whether the structured data is complete enough for shopping agents and merchant listings. Read-only, re-runnable, with a self-test.
+description: Use when checking live feeds and structured data. Read-only, re-runnable, with a self-test.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

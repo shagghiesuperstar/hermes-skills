@@ -1,6 +1,6 @@
 ---
 name: hermes-slash-command-coaching
-description: Use when a Hermes user needs the right slash command for a running task. Covers the decision rule for steer, queue, background and interrupt, plus goal, loop and plan.
+description: Use when a user needs the right slash command. The task is already running. Covers the decision rule for steer, queue, background and interrupt, plus goal, loop and plan.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

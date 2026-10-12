@@ -1,6 +1,6 @@
 ---
 name: local-model-deployment
-description: Use when running, debugging, or retiring local LLM servers on a Mac. Covers port coexistence, single-model residency, auth and bind rules, memory-guard errors, client routing, and safe model decommissioning.
+description: Use when running, debugging, or retiring LLM servers. They run locally on a Mac. Covers port coexistence, single-model residency, auth and bind rules, memory-guard errors, client routing, and safe model decommissioning.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

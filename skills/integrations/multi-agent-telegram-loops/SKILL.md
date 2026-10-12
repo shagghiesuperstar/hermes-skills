@@ -1,6 +1,6 @@
 ---
 name: multi-agent-telegram-loops
-description: Use when several agents share one Telegram group and their replies start a loop, a flood or a repeated message. Covers the causes, log checks, consolidated replies and fixes.
+description: Use when agents in one Telegram group start a loop. It also applies to floods and repeated messages. Covers the causes, log checks, consolidated replies and fixes.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

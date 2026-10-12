@@ -1,6 +1,6 @@
 ---
 name: bento
-description: Use when operating the Bento email platform through its API, MCP server or dashboard. Covers keys and site scoping, which surface to use, safe-send rules and common pitfalls.
+description: Use when operating the Bento email platform. Work through its API, MCP server or dashboard. Covers keys and site scoping, which surface to use, safe-send rules and common pitfalls.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

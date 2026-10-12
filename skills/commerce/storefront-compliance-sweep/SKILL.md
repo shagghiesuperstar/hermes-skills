@@ -1,6 +1,6 @@
 ---
 name: storefront-compliance-sweep
-description: Use when running a read-only wording-compliance sweep of a live storefront. Crawls every public page with GET requests, flags copy that breaks research-use-only or similar rules, and produces per-hit evidence, a rewrite for each flag and a report generated from the data.
+description: Use when running a read-only wording compliance sweep. Crawls every public page with GET requests, flags copy that breaks research-use-only or similar rules, and produces per-hit evidence, a rewrite for each flag and a report generated from the data.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

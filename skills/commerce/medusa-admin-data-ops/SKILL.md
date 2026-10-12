@@ -1,6 +1,6 @@
 ---
 name: medusa-admin-data-ops
-description: Use when making catalog, inventory, price, category or storefront-visibility changes through the Medusa v2 Admin API. Covers auth, relation expansion, read-back after every write, safe large reads and the variant-image link rules.
+description: Use when changing Medusa catalog or inventory data. Covers auth, relation expansion, read-back after every write, safe large reads and the variant-image link rules.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

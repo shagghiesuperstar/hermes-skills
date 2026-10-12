@@ -1,6 +1,6 @@
 ---
 name: self-hosted-firecrawl
-description: Use when scraping, searching or crawling through a self-hosted Firecrawl server on a private network. Covers the health check, page scrape, search, crawl jobs and safe-use rules.
+description: Use when scraping through a self-hosted Firecrawl server. The server runs on a private network, and search and crawl jobs are also covered. Covers the health check, page scrape, search, crawl jobs and safe-use rules.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

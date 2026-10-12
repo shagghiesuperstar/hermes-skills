@@ -1,6 +1,6 @@
 ---
 name: secrets-migration-fleet-rollout
-description: Use when auditing plaintext secrets on a host and migrating them to a shared Bitwarden Secrets Manager project. Covers inventory without reading values, cross-referencing the store, updating consumers, read-only surface checks, and shredding only after operator approval.
+description: Use when auditing plaintext secrets on a host. It also migrates them to a shared Bitwarden Secrets Manager project. Covers inventory without reading values, cross-referencing the store, updating consumers, read-only surface checks, and shredding only after operator approval.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

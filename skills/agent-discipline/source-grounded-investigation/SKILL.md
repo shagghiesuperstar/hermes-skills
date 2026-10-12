@@ -1,6 +1,6 @@
 ---
 name: source-grounded-investigation
-description: Use when asked what an installed tool does, where it writes, or how to remove it. Read the upstream installer source first, list the install footprint and its reseed sources, then ship a dry-run removal that backs up before it deletes.
+description: Use when asked how to remove an installed tool. It also covers what the tool does and where it writes. Read the upstream installer source first, list the install footprint and its reseed sources, then ship a dry-run removal that backs up before it deletes.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

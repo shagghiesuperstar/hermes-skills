@@ -1,6 +1,6 @@
 ---
 name: external-coding-agent-orchestration
-description: Use when delegating repository changes to a headless coding agent CLI while the orchestrator keeps scope, safety, review, and verification.
+description: Use when delegating repo edits to a headless coding CLI. The orchestrator keeps scope, safety, review, and verification.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

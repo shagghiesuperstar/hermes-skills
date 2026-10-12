@@ -1,6 +1,6 @@
 ---
 name: repo-sanitization-publishing
-description: Use when publishing code or documents to a public GitHub account with no personal identifiers, machine identity, network details or secrets, and when maintaining that public repository afterwards.
+description: Use when publishing code or docs publicly on GitHub. It must carry no personal identifiers, machine identity, network details or secrets. Covers maintaining that public repository afterwards.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: storefront-accessibility-audit
-description: Use when auditing storefront WCAG 2.2 AA accessibility with axe-core across several pages and viewports. Read-only, per-rule CSV, draft PR.
+description: Use when auditing storefront WCAG 2.2 AA accessibility. Read-only, per-rule CSV, draft PR.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

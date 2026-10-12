@@ -1,6 +1,6 @@
 ---
 name: model-pipeline
-description: Use when preparing a Hugging Face model for MLX inference. Covers source verification, resumable download, shard repair, quantization choices, and benchmark gating.
+description: Use when preparing a Hugging Face model for MLX. It is for MLX inference. Covers source verification, resumable download, shard repair, quantization choices, and benchmark gating.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

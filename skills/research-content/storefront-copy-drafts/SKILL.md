@@ -1,6 +1,6 @@
 ---
 name: storefront-copy-drafts
-description: Use when drafting storefront copy as files for review (category intros, product fields, recovery screens, lifecycle messages, or a copy inventory). Every claim cites a live page or source file.
+description: Use when drafting storefront copy as files for review. Every claim cites a live page or source file.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

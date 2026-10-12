@@ -1,6 +1,6 @@
 ---
 name: technical-documentation-distillation
-description: Use when distilling a large official documentation corpus into compact offline reference files that keep exact endpoints, headers, signatures, imports, paths and commands. Search first, read bounded regions, and verify every file and the final response.
+description: Use when distilling large official docs. The references keep exact endpoints, headers, signatures, imports, paths and commands. Search first, read bounded regions, and verify every file and the final response.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: incident-forensics
-description: Use when a process restarted, quit, or died on its own and the cause must be found from evidence. Covers timelines, ranked elimination, probe hygiene, and an honest report.
+description: Use when a process quit, died, or restarted on its own. The cause must be found from evidence. Covers timelines, ranked elimination, probe hygiene, and an honest report.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

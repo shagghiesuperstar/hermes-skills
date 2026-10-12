@@ -1,6 +1,6 @@
 ---
 name: overnight-housekeeping
-description: Use when running a scheduled overnight health and hygiene pass on a Hermes agent host. Covers gateway health, memory store hygiene, skills and cron checks, config review, tool dependencies, and backups.
+description: Use when running a scheduled overnight health pass. It is a health and hygiene pass on a Hermes agent host. Covers gateway health, memory store hygiene, skills and cron checks, config review, tool dependencies, and backups.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

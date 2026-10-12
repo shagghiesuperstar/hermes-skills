@@ -1,6 +1,6 @@
 ---
 name: repo-ssot-hygiene
-description: Use when repository docs or remote git state mislead the agents and teammates who rely on them. Keeps one current-truth document accurate and reconciles remote state with local history.
+description: Use when repo docs or remote git state mislead agents. Keeps one current-truth document accurate and reconciles remote state with local history.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

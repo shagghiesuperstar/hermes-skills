@@ -1,6 +1,6 @@
 ---
 name: read-only-discovery
-description: Use when assembling facts from files, git history or running processes without changing the trees under study. Search in a fixed order, record metadata for every hit, mark what could not be proven as unknown, and keep secrets out of the report.
+description: Use when collecting facts without changing anything. It covers files, git history and running processes. Search in a fixed order, record metadata for every hit, mark what could not be proven as unknown, and keep secrets out of the report.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

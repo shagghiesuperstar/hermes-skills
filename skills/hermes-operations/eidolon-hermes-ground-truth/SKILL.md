@@ -1,6 +1,6 @@
 ---
 name: eidolon-hermes-ground-truth
-description: Use when a Hermes issue needs checking against upstream before you report, file or change anything. Covers upstream verdicts, drift and safe apply.
+description: Use when a Hermes issue needs an upstream check. Check it before you report, file or change anything. Covers upstream verdicts, drift and safe apply.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

@@ -1,6 +1,6 @@
 ---
 name: mcp-server-authoring
-description: Use when building a small Python MCP server from a spec, with its tools wired to a fetch or scrape function. Covers the runtime, library version traps, FastMCP wiring and config.
+description: Use when building a small Python MCP server from a spec. Its tools are wired to a fetch or scrape function. Covers the runtime, library version traps, FastMCP wiring and config.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

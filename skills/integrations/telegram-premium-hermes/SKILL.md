@@ -1,6 +1,6 @@
 ---
 name: telegram-premium-hermes
-description: Use when setting up or troubleshooting large-file handling and reactions for a Hermes Telegram bot, including the optional local Bot API. Covers the limits, the config keys and the agent behavior rules.
+description: Use when a Hermes Telegram bot needs large-file handling. It covers reactions and the optional local Bot API, including troubleshooting. Covers the limits, the config keys and the agent behavior rules.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

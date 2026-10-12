@@ -1,6 +1,6 @@
 ---
 name: data-artifact-adversarial-review
-description: Use when reviewing a CSV, JSON, or other data deliverable another agent produced, such as a list, extract, or catalog audit, before it merges. Verifies claims by re-execution.
+description: Use when reviewing another agent's data deliverable. Covers CSV, JSON and other data outputs, such as a list, extract, or catalog audit, before a merge. Verifies claims by re-execution.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

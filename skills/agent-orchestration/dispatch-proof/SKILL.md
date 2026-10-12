@@ -1,6 +1,6 @@
 ---
 name: dispatch-proof
-description: Use when claiming a background job is running or finished. Requires a process ID, a fresh process check, and read output before any status report.
+description: Use when claiming a background job is running or done. Requires a process ID, a fresh process check, and read output before any status report.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

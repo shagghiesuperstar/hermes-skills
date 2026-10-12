@@ -1,6 +1,6 @@
 ---
 name: exo-uncensored-model-scout
-description: Use when registering uncensored MLX models on an EXO cluster. Covers curated discovery, RAM-budget scoring, API registration, download, verification, and state tracking.
+description: Use when registering uncensored MLX models on EXO. It applies to an EXO cluster. Covers curated discovery, RAM-budget scoring, API registration, download, verification, and state tracking.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

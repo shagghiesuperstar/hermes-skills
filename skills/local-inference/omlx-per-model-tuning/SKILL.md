@@ -1,6 +1,6 @@
 ---
 name: omlx-per-model-tuning
-description: Use when tuning, validating, promoting, or rolling back one model's settings in an oMLX server. Covers schema-first edits, read-back checks, promotion gates, and benchmarking.
+description: Use when tuning one oMLX model's settings. It also covers validating, promoting, and rolling back a change on an oMLX server. Covers schema-first edits, read-back checks, promotion gates, and benchmarking.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

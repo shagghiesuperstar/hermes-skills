@@ -1,6 +1,6 @@
 ---
 name: ask-before-assuming
-description: Use when an instruction could mean more than one source, target or scope. Find every candidate first, then ask before planning, unless only one candidate exists.
+description: Use when an instruction could mean several things. It applies when the candidates are several sources, targets or scopes. Find every candidate first, then ask before planning, unless only one candidate exists.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT

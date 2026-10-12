@@ -1,6 +1,6 @@
 ---
 name: catalog-photo-pipeline
-description: Use when turning barcode-tagged or multi-angle product photos into catalog media, identity, enrichment and on-domain certificate links. Covers a read-only preflight audit, barcode grouping, OCR, gallery replacement and read-back checks.
+description: Use when turning product photos into catalog media. Covers a read-only preflight audit, barcode grouping, OCR, gallery replacement and read-back checks.
 version: 1.0.0
 author: Pixel Rainbow (shagghiesuperstar)
 license: MIT
