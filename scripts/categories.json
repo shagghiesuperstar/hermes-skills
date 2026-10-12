@@ -1,0 +1,14 @@
+[
+  {"id": "agent-orchestration", "label": "Agent Orchestration", "blurb": "Dispatch, review and coordinate work across many agents and coding harnesses."},
+  {"id": "agent-discipline", "label": "Agent Discipline", "blurb": "Behaviour rules that keep agents honest, grounded and verifiable."},
+  {"id": "hermes-operations", "label": "Hermes Operations", "blurb": "Run Hermes Agent day to day: gateway, config, profiles, models and sessions."},
+  {"id": "memory-knowledge", "label": "Memory & Knowledge", "blurb": "Long-term memory providers, context hygiene and knowledge distillation."},
+  {"id": "local-inference", "label": "Local Inference", "blurb": "Serve, tune and route models on Apple Silicon and small clusters."},
+  {"id": "fleet-infrastructure", "label": "Fleet Infrastructure", "blurb": "Keep several machines healthy, reachable and in sync."},
+  {"id": "security", "label": "Security & Secrets", "blurb": "Secret handling, repo hygiene and forensic checks."},
+  {"id": "devops", "label": "DevOps & Shipping", "blurb": "Deploys, pull-request flow, release checks and repo hygiene."},
+  {"id": "web-quality", "label": "Web Quality", "blurb": "Audits for accessibility, speed, links, discoverability and visual polish."},
+  {"id": "commerce", "label": "Headless Commerce", "blurb": "Catalog pipelines, storefront operations and regulated-product e-commerce."},
+  {"id": "research-content", "label": "Research & Content", "blurb": "Sourced research, fact-checking and grounded copy."},
+  {"id": "integrations", "label": "Integrations", "blurb": "Messaging, MCP, automation and third-party tools wired into Hermes."}
+]

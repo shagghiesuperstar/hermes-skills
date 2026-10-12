@@ -1,0 +1,90 @@
+[
+  {
+    "name": "NousResearch/hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "description": "Hermes Agent by Nous Research, the upstream runtime these skills are written for.",
+    "keywords": [
+      "hermes"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/commanders-intent",
+    "url": "https://github.com/shagghiesuperstar/commanders-intent",
+    "description": "Commander's Intent: a self-contained Chief of Staff Grok Bot template for running a proactive, self-healing agent fleet (Grok Bot + Hermes Agent + Hindsight memory).",
+    "keywords": [
+      "commander"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/hermes-grok-bridge",
+    "url": "https://github.com/shagghiesuperstar/hermes-grok-bridge",
+    "description": "Hermes to Grok Bot bridge: SSH relay and native API methods",
+    "keywords": [
+      "grok"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/n8n-master-grok-bot",
+    "url": "https://github.com/shagghiesuperstar/n8n-master-grok-bot",
+    "description": "Official-first n8n control-plane Grok plugin. Canary-first instance MCP. Not a public marketplace listing.",
+    "keywords": [
+      "n8n"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/inference-quota-radar",
+    "url": "https://github.com/shagghiesuperstar/inference-quota-radar",
+    "description": "Inference Quota Radar \u2014 headroom/burn/reset watcher for Hermes & agents (not a spend maximizer)",
+    "keywords": [
+      "quota",
+      "headroom",
+      "subscription"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/hermes-plugin-bento",
+    "url": "https://github.com/shagghiesuperstar/hermes-plugin-bento",
+    "description": "Bento (bentonow.com) email marketing plugin for Hermes Agent: dry-run, confirm-token and human-approval gates on every send. Stdlib only.",
+    "keywords": [
+      "bento"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/hermes-master-ref-maintained",
+    "url": "https://github.com/shagghiesuperstar/hermes-master-ref-maintained",
+    "description": "Maintained offline architecture reference for Hermes Agent, synced weekly from official docs + NousResearch/hermes-agent repo",
+    "keywords": [
+      "architecture"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/hermes-fusion-tap",
+    "url": "https://github.com/shagghiesuperstar/hermes-fusion-tap",
+    "description": "Community Hermes Agent Skills Tap \u2014 Fusion Orchestration System with MOA Judge, Premortem Diagnostics, and Local/Cloud Hybrid support.",
+    "keywords": [
+      "moa",
+      "fusion",
+      "premortem",
+      "judge"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/anti-vibecode",
+    "url": "https://github.com/shagghiesuperstar/anti-vibecode",
+    "description": "Hermes skill: score the 30 vibecoded landing-page tells and refuse to ship more than five.",
+    "keywords": [
+      "vibecode",
+      "vibecoded"
+    ]
+  },
+  {
+    "name": "shagghiesuperstar/Eidolon-Soul-For-Hermes-Agent-Universal",
+    "url": "https://github.com/shagghiesuperstar/Eidolon-Soul-For-Hermes-Agent-Universal",
+    "description": "Eidolon hardens Hermes's native dream, reflection, and memory loops into a disciplined system. It adds a quine-sealed, zero-guess SOUL.md, risk-gated self-improvement (auto-apply low risk, shadow-test high risk, auto-rollback regressions), and an integrity watchdog that detects when Hermes upstream changes break your setup and alerts you once.",
+    "keywords": [
+      "eidolon",
+      "dream",
+      "reflection"
+    ]
+  }
+]
