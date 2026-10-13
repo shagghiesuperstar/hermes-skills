@@ -14,6 +14,8 @@ hermes skills install shagghiesuperstar/hermes-skills/skills/<name> --category <
 
 Per the Hermes docs, custom GitHub taps are searched with `--source github`.
 
+`tap add` works, but on a cold cache `hermes skills search` can time out before it reaches this tap. If search shows nothing, install by identifier (the third line above), or copy the install line from the skill's page on [pixelrainbow.ai/skills](https://pixelrainbow.ai/skills/).
+
 ## What is this
 
 Generic, reusable Hermes Agent skills from Pixel Rainbow. Each one is written to work on any machine: the publisher's names, hostnames, addresses, paths and secrets are replaced with `<placeholders>` that you fill in. Cited third-party attribution stays.
