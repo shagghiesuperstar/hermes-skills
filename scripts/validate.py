@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate every skills/<category>/<name>/SKILL.md in the library.
+"""Validate every skills/<name>/SKILL.md in the library.
 
 Usage: python3 scripts/validate.py [--root DIR]
 
@@ -98,7 +98,7 @@ def parse_skill(skill_dir, root, category_ids):
     record = {
         "name": skill_dir.name,
         "title": "",
-        "category": skill_dir.parent.name,
+        "category": "",
         "path": path,
         "tags": [],
         "description": "",
@@ -176,10 +176,10 @@ def parse_skill(skill_dir, root, category_ids):
             fail(f"metadata.hermes.tags must be lowercase strings, bad: {bad_tags}")
 
     category = hermes.get("category")
-    if category != record["category"]:
-        fail(f"metadata.hermes.category must equal the parent directory '{record['category']}'")
     if not isinstance(category, str) or category not in category_ids:
-        fail(f"metadata.hermes.category {category!r} is not in scripts/categories.json")
+        fail(f"metadata.hermes.category must be present and one of scripts/categories.json, got {category!r}")
+    else:
+        record["category"] = category
 
     related = fm.get("related_skills") or []
     if not isinstance(related, list) or not all(isinstance(r, str) for r in related):
@@ -239,22 +239,19 @@ def parse_library(root):
     if not skills_dir.is_dir():
         return records, problems, warnings
 
-    for cat_dir in sorted(skills_dir.iterdir()):
-        if cat_dir.name in IGNORED_NAMES:
+    for skill_dir in sorted(skills_dir.iterdir()):
+        if skill_dir.name in IGNORED_NAMES:
             continue
-        if not cat_dir.is_dir():
-            problems.append(f"{cat_dir.relative_to(root).as_posix()}: only category directories belong under skills/")
+        if not skill_dir.is_dir():
+            problems.append(f"{skill_dir.relative_to(root).as_posix()}: only skill directories belong under skills/")
             continue
-        for skill_dir in sorted(cat_dir.iterdir()):
-            if skill_dir.name in IGNORED_NAMES:
-                continue
-            if not skill_dir.is_dir():
-                problems.append(f"{skill_dir.relative_to(root).as_posix()}: only skill directories belong in a category")
-                continue
-            record, found, notes = parse_skill(skill_dir, root, category_ids)
-            records.append(record)
-            problems.extend(found)
-            warnings.extend(notes)
+        if skill_dir.name.startswith((".", "_")):
+            problems.append(f"{skill_dir.relative_to(root).as_posix()}: skill directory names must not start with '.' or '_'; Hermes taps skip them")
+            continue
+        record, found, notes = parse_skill(skill_dir, root, category_ids)
+        records.append(record)
+        problems.extend(found)
+        warnings.extend(notes)
 
     paths_by_name = {}
     for record in records:
@@ -273,7 +270,7 @@ def parse_library(root):
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="Validate skills/<category>/<name>/SKILL.md.")
+    parser = argparse.ArgumentParser(description="Validate skills/<name>/SKILL.md.")
     parser.add_argument("--root", type=Path, default=REPO_ROOT, help="repo root (default: this repo)")
     args = parser.parse_args(argv)
 

@@ -16,6 +16,7 @@ import validate
 
 REPO_NAME = "hermes-skills"
 REPO_URL = "https://github.com/shagghiesuperstar/hermes-skills"
+TAP_REPO = "shagghiesuperstar/hermes-skills"
 SITE_URL = "https://pixelrainbow.ai/skills/"
 RAW_BASE = "https://raw.githubusercontent.com/shagghiesuperstar/hermes-skills/main/"
 BLOB_BASE = "https://github.com/shagghiesuperstar/hermes-skills/blob/main/"
@@ -56,6 +57,7 @@ def catalog_skill(record, repos):
         "raw_url": raw_url,
         "html_url": BLOB_BASE + record["path"],
         "install": f"hermes skills install {raw_url} --category {record['category']}",
+        "install_tap": f"hermes skills install {TAP_REPO}/skills/{record['name']} --category {record['category']}",
         "related_skills": record["related_skills"],
         "related_repos": [
             {"name": r["name"], "url": r["url"], "description": r["description"]}
@@ -104,6 +106,7 @@ def render_readme(template, catalog, repos):
         "{{CATEGORY_LIST}}": category_list(catalog["categories"]),
         "{{INDEX_TABLE}}": index_table(skills),
         "{{INSTALL_EXAMPLE}}": skills[0]["install"] if skills else "# No skills published yet",
+        "{{INSTALL_TAP_EXAMPLE}}": skills[0]["install_tap"] if skills else "# No skills published yet",
         "{{REPO_LIST}}": repo_list(repos),
     }
     text = template
@@ -138,6 +141,7 @@ def main(argv=None):
     catalog = {
         "name": REPO_NAME,
         "repo": REPO_URL,
+        "tap": f"hermes skills tap add {TAP_REPO}",
         "site": SITE_URL,
         "license": validate.LICENSE,
         "count": len(skills),

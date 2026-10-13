@@ -1,10 +1,10 @@
 # Contributing
 
-Thanks for helping build the Hermes skills library. Each skill is one folder, `skills/<category>/<name>/`, holding a single `SKILL.md`.
+Thanks for helping build the Hermes skills library. Each skill is one folder, `skills/<name>/`, holding a single `SKILL.md`.
 
 ## The SKILL.md contract
 
-- Frontmatter: `name` (matches the folder), `description` (starts with `Use when`, 400 characters or fewer), `version` (`x.y.z`), `author` (`Pixel Rainbow (shagghiesuperstar)`), `license` (`MIT`), `metadata.hermes.tags` (2 to 8 lowercase strings), `metadata.hermes.category` (matches the parent folder), and optional `related_skills` (names of skills in this repo).
+- Frontmatter: `name` (matches the folder), `description` (starts with `Use when`, 400 characters or fewer), `version` (`x.y.z`), `author` (`Pixel Rainbow (shagghiesuperstar)`), `license` (`MIT`), `metadata.hermes.tags` (2 to 8 lowercase strings), `metadata.hermes.category` (present, and one of `scripts/categories.json`), and optional `related_skills` (names of skills in this repo).
 - Body: one H1, then H2 sections in this order: Overview, When to Use, Features, Benefits, Procedure, Pitfalls, Verification, and optionally Attribution last. Features and Benefits each list 3 to 8 bullets.
 - Skills stand alone. The skill folder holds only `SKILL.md`, and the body must not point at `scripts/`, `references/`, `templates/` or `assets/`.
 
@@ -23,12 +23,13 @@ python3 scripts/build_catalog.py
 
 Skills are public. Remove everything personal, machine-specific, network-specific or customer-specific before you commit:
 
-- No personal names, email addresses, phone numbers or social handles.
+- No names, email addresses, phone numbers, social handles or account ids of the publisher, or of the publisher's machines or clients.
+- Cited third-party attribution is allowed, and it is required when a skill adapts someone else's work. Name the upstream author and repo.
 - No hostnames, IP addresses, private network names or local home-directory paths.
 - No API keys, tokens, passwords or other credentials.
 - No customer, order or account data.
 
-Replace each of these with a placeholder in backticks, such as `<your-api-key>`, `<host>` or `<project-dir>`, so it renders on GitHub.
+Replace each personal, machine, network, credential or customer detail above with a placeholder in backticks, such as `<your-api-key>`, `<host>` or `<project-dir>`, so it renders on GitHub.
 
 ## Pull request flow
 
